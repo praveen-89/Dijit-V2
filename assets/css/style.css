@@ -54,7 +54,7 @@
 /*  01. Theme default CSS
 /*----------------------------------------*/
 /*-- Google Font --*/
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&amp;family=Work+Sans:wght@400;500;600;700;900&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 :root {
   --bg-body: #FFFFFF;
@@ -104,7 +104,7 @@ body {
   font-style: normal;
   font-weight: normal;
   visibility: visible;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #444444;
   position: relative;
 }
@@ -120,11 +120,24 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #333333;
   font-weight: 400;
   margin-top: 0;
   line-height: 1.2;
+}
+
+/* Typography and UI base for the homepage SaaS refactor */
+.modern-home.saas-2025 {
+  font-family: "Inter", sans-serif;
+}
+
+.modern-home.saas-2025 h1,
+.modern-home.saas-2025 h2,
+.modern-home.saas-2025 h3,
+.modern-home.saas-2025 h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
 
 h1 {
@@ -412,7 +425,7 @@ img {
 }
 
 .bg_image--1 {
-  background-image: url(../images/bg/bg_image--1.jpg);
+  background-image: url(../images/bg/hero-office-space.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -15133,4 +15146,1899 @@ body.template-color-1 .header-mobile .header-logo img {
 body.template-color-1 .header-mobile {
   background-color: var(--primary-purple) !important;
   padding: 10px 0;
+}
+/*----------------------------------------*/
+/*  Modern Home Visual Refresh (Index)    */
+/*----------------------------------------*/
+.modern-home {
+  --mh-bg: #f4f6fb;
+  --mh-surface: #ffffff;
+  --mh-surface-soft: #f8f9fc;
+  --mh-text: #101625;
+  --mh-muted: #6d7485;
+  --mh-border: #e7ebf2;
+  --mh-accent: #3343dc;
+  --mh-accent-dark: #232d9f;
+  --mh-shadow: 0 16px 42px rgba(21, 31, 74, 0.08);
+  background: radial-gradient(circle at 10% -10%, #e4ebff 0%, #f4f6fb 42%), #f4f6fb;
+  color: var(--mh-text);
+  font-family: "Work Sans", "Segoe UI", sans-serif;
+}
+
+.modern-home h1,
+.modern-home h2,
+.modern-home h3,
+.modern-home h4,
+.modern-home h5,
+.modern-home h6 {
+  color: var(--mh-text);
+  letter-spacing: -0.02em;
+}
+
+.modern-home a:hover {
+  color: var(--mh-accent);
+  text-decoration: none;
+}
+
+.modern-home .section-title .title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.modern-home .section-title > span {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--mh-muted);
+}
+
+.modern-home .header-absolute {
+  top: 16px;
+}
+
+.modern-home .header-absolute .main-header {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 12px 32px rgba(18, 30, 68, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  margin: 0 20px;
+}
+
+.modern-home .main-menu > ul > li > a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2b3142;
+}
+
+.modern-home .jp-author.item a {
+  border-radius: 999px;
+  border: 1px solid var(--mh-border);
+  padding: 9px 16px;
+  color: #2d3448;
+  background: #fff;
+}
+
+.modern-home .jp-author-action.item a {
+  border-radius: 999px;
+  background: linear-gradient(120deg, var(--mh-accent) 0%, #5563ff 100%);
+  box-shadow: 0 10px 24px rgba(51, 67, 220, 0.35);
+}
+
+.modern-home .hero-item {
+  min-height: 74vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.modern-home .hero-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(10, 17, 37, 0.74) 0%, rgba(10, 17, 37, 0.42) 52%, rgba(10, 17, 37, 0.2) 100%);
+}
+
+.modern-home .hero-content-2 {
+  position: relative;
+  z-index: 1;
+  max-width: 920px;
+}
+
+.modern-home .hero-content-2 .title {
+  font-size: 54px;
+  line-height: 1.08;
+  margin-bottom: 14px;
+  color: #ffffff;
+  max-width: 920px;
+  text-wrap: balance;
+}
+
+.modern-home .hero-content-2 p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 760px;
+}
+
+.modern-home .ht-btn,
+.modern-home .submit-btn .ht-btn {
+  border-radius: 12px;
+  border: 0;
+  background: linear-gradient(120deg, var(--mh-accent) 0%, #4f60ff 100%);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 12px 24px rgba(51, 67, 220, 0.32);
+}
+
+.modern-home .transparent-btn-two {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: none;
+}
+
+.modern-home .job-search-wrap {
+  background: rgba(255, 255, 255, 0.97);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 28px 56px rgba(15, 29, 64, 0.18);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.modern-home .job-search-wrap .single-field-item {
+  background: var(--mh-surface-soft);
+  border-radius: 12px;
+  border: 1px solid var(--mh-border);
+}
+
+.modern-home .job-search-wrap .single-field-item input,
+.modern-home .job-search-wrap .single-field-item .nice-select {
+  color: #2f3647;
+}
+
+.modern-home .trending-keywords {
+  margin-top: 16px;
+}
+
+.modern-home .trending-keywords .title,
+.modern-home .trending-keywords a {
+  color: #606a7d;
+}
+
+.modern-home .feature-section,
+.modern-home .job-section,
+.modern-home .testimonial-section,
+.modern-home .blog-section {
+  background: transparent;
+}
+
+.modern-home .single-feature {
+  background: var(--mh-surface);
+  border: 1px solid var(--mh-border);
+  border-radius: 16px;
+  box-shadow: var(--mh-shadow);
+  padding: 24px;
+}
+
+.modern-home .featured-employer,
+.modern-home .job-location,
+.modern-home .job-section,
+.modern-home .blog-section,
+.modern-home .testimonial-section,
+.modern-home .cta-section {
+  position: relative;
+}
+
+.modern-home .featured-employer::before,
+.modern-home .job-section::before,
+.modern-home .testimonial-section::before,
+.modern-home .blog-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 28px;
+  bottom: 22px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.52);
+  z-index: 0;
+}
+
+.modern-home .featured-employer .container,
+.modern-home .job-location .container,
+.modern-home .job-section .container,
+.modern-home .blog-section .container,
+.modern-home .testimonial-section .container,
+.modern-home .cta-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.modern-home .employer-item,
+.modern-home .single-job,
+.modern-home .single-blog,
+.modern-home .single-testimonial {
+  background: var(--mh-surface);
+  border: 1px solid var(--mh-border);
+  border-radius: 16px;
+  box-shadow: var(--mh-shadow);
+  overflow: hidden;
+}
+
+.modern-home .employer-item {
+  min-height: 100%;
+}
+
+.modern-home .single-job {
+  border-left: none;
+}
+
+.modern-home .single-job .info-top {
+  padding: 20px;
+}
+
+.modern-home .single-job .job-title a {
+  color: #1f2535;
+  font-weight: 700;
+}
+
+.modern-home .single-job .job-salary {
+  color: var(--mh-accent);
+  font-weight: 700;
+}
+
+.modern-home .dijitprogram-tab-menu ul li a {
+  border-radius: 999px;
+  border: 1px solid var(--mh-border);
+  color: #45506a;
+  font-weight: 600;
+  padding: 8px 16px;
+}
+
+.modern-home .dijitprogram-tab-menu ul li a.active {
+  background: #eef1ff;
+  color: var(--mh-accent);
+  border-color: #ccd4ff;
+}
+
+.modern-home .single-job-location {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--mh-shadow);
+}
+
+.modern-home .single-job-location .overlay-gradient {
+  background: linear-gradient(180deg, rgba(16, 22, 37, 0.05) 35%, rgba(16, 22, 37, 0.72) 100%);
+}
+
+.modern-home .single-job-location .city-name,
+.modern-home .single-job-location .count-job {
+  color: #fff;
+}
+
+.modern-home .single-blog .blog-content {
+  padding: 22px;
+}
+
+.modern-home .single-blog .title a {
+  color: #1d2433;
+}
+
+.modern-home .single-testimonial {
+  padding: 26px;
+}
+
+.modern-home .funfact-section {
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.modern-home .single-funfact {
+  border: 1px solid var(--mh-border);
+  border-radius: 16px;
+  background: var(--mh-surface);
+  box-shadow: var(--mh-shadow);
+}
+
+.modern-home .single-funfact .counter {
+  color: #243162;
+}
+
+.modern-home .cta-section {
+  height: auto;
+  padding-bottom: 70px;
+}
+
+.modern-home .cta-wrapper {
+  border-radius: 22px;
+  overflow: hidden;
+  background: radial-gradient(circle at 75% 40%, rgba(109, 127, 255, 0.38) 0%, rgba(79, 98, 251, 0.2) 35%, rgba(66, 84, 229, 0) 70%), linear-gradient(130deg, #202fb5 0%, #3343dc 55%, #4253ef 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 24px 52px rgba(36, 55, 169, 0.32);
+}
+
+.modern-home .brand-section {
+  background: transparent;
+}
+
+.modern-home .footer-section {
+  background: linear-gradient(140deg, #141b2f 0%, #0f1527 100%);
+}
+
+.modern-home .footer-top-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.modern-home .footer-widget .footer-widget-title,
+.modern-home .footer-widget p,
+.modern-home .footer-list li a,
+.modern-home .copyright p,
+.modern-home .footer-social-list li a {
+  color: rgba(230, 236, 255, 0.84);
+}
+
+.modern-home .footer-widget .footer-widget-title {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1199px) {
+  .modern-home .hero-content-2 .title {
+    font-size: 44px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .modern-home .hero-item {
+    min-height: 64vh;
+  }
+
+  .modern-home .hero-content-2 .title {
+    font-size: 36px;
+  }
+
+  .modern-home .hero-action-btns {
+    margin-top: 22px;
+    margin-bottom: 18px;
+  }
+
+  .modern-home .featured-employer::before,
+  .modern-home .job-section::before,
+  .modern-home .testimonial-section::before,
+  .modern-home .blog-section::before {
+    left: 8px;
+    right: 8px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .modern-home .section-title .title {
+    font-size: 28px;
+  }
+
+  .modern-home .hero-content-2 .title {
+    font-size: 30px;
+  }
+
+  .modern-home .job-search-wrap {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .modern-home .single-feature,
+  .modern-home .single-job,
+  .modern-home .single-blog,
+  .modern-home .single-testimonial,
+  .modern-home .employer-item,
+  .modern-home .single-funfact {
+    border-radius: 14px;
+  }
+}
+
+/*----------------------------------------*/
+/*  Modern Home Refinement Pass           */
+/*----------------------------------------*/
+.modern-home {
+  --mh-bg: #eff1f7;
+  --mh-surface: #ffffff;
+  --mh-surface-soft: #f6f8fc;
+  --mh-text: #111827;
+  --mh-muted: #70788b;
+  --mh-border: #e3e8f3;
+  --mh-accent: #2f43d9;
+  --mh-shadow: 0 10px 28px rgba(20, 33, 77, 0.08);
+  background: linear-gradient(180deg, #f9faff 0%, #eff1f7 28%, #eff1f7 100%);
+}
+
+.modern-home #main-wrapper {
+  overflow: hidden;
+}
+
+.modern-home .header-absolute {
+  top: 8px;
+}
+
+.modern-home .header-absolute .main-header {
+  border-radius: 14px;
+  margin: 0 16px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  box-shadow: 0 8px 24px rgba(18, 30, 68, 0.08);
+}
+
+.modern-home .main-menu > ul > li > a {
+  font-size: 13px;
+  color: #30374a;
+}
+
+.modern-home .hero-item {
+  min-height: 66vh;
+}
+
+.modern-home .hero-content-2 {
+  margin-top: 38px;
+}
+
+.modern-home .hero-content-2 .title {
+  font-size: 48px;
+  max-width: 780px;
+}
+
+.modern-home .hero-content-2 p {
+  font-size: 15px;
+  max-width: 640px;
+}
+
+.modern-home .hero-action-btns {
+  margin-top: 24px;
+  margin-bottom: 22px;
+}
+
+.modern-home .job-search-wrap {
+  margin-top: 40px;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 22px 44px rgba(15, 29, 64, 0.16);
+}
+
+.modern-home .job-search-wrap .single-field-item {
+  min-height: 58px;
+  border-radius: 10px;
+}
+
+.modern-home .submit-btn .ht-btn {
+  min-height: 58px;
+  border-radius: 10px;
+}
+
+.modern-home .trending-keywords {
+  display: none;
+}
+
+.modern-home .featured-employer,
+.modern-home .job-location,
+.modern-home .job-section,
+.modern-home .testimonial-section,
+.modern-home .blog-section {
+  padding-top: 92px !important;
+  padding-bottom: 92px !important;
+}
+
+.modern-home .funfact-section {
+  padding-top: 14px;
+  padding-bottom: 8px;
+}
+
+.modern-home .single-funfact {
+  box-shadow: none;
+  border: 0;
+  background: transparent;
+  border-right: 1px solid #dce2ef;
+  border-radius: 0;
+  padding: 8px 22px;
+}
+
+.modern-home .single-funfact:last-child {
+  border-right: 0;
+}
+
+.modern-home .single-funfact .counter {
+  font-size: 34px;
+  line-height: 1.1;
+  color: #26325f;
+}
+
+.modern-home .single-funfact .text {
+  letter-spacing: 0.09em;
+  color: #7b8396;
+  font-size: 12px;
+}
+
+.modern-home .featured-employer::before,
+.modern-home .job-section::before,
+.modern-home .testimonial-section::before,
+.modern-home .blog-section::before {
+  top: 16px;
+  bottom: 12px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.modern-home .employer-item,
+.modern-home .single-job,
+.modern-home .single-blog,
+.modern-home .single-testimonial,
+.modern-home .single-job-location,
+.modern-home .single-feature {
+  border-radius: 12px;
+  border-color: #e6ebf5;
+  box-shadow: 0 8px 20px rgba(20, 33, 77, 0.06);
+}
+
+.modern-home .employer-item {
+  padding: 18px 14px;
+}
+
+.modern-home .employer-item .employer-image {
+  margin-bottom: 12px;
+}
+
+.modern-home .job-location .single-job-location {
+  min-height: 240px;
+}
+
+.modern-home .single-job {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.modern-home .single-job:hover,
+.modern-home .single-blog:hover,
+.modern-home .employer-item:hover,
+.modern-home .single-feature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(20, 33, 77, 0.1);
+}
+
+.modern-home .dijitprogram-tab-menu ul {
+  gap: 8px;
+}
+
+.modern-home .dijitprogram-tab-menu ul li {
+  margin-right: 0;
+}
+
+.modern-home .dijitprogram-tab-menu ul li a {
+  font-size: 13px;
+}
+
+.modern-home .cta-section {
+  padding-top: 80px !important;
+  padding-bottom: 84px;
+}
+
+.modern-home .cta-wrapper {
+  border-radius: 18px;
+}
+
+.modern-home .footer-section {
+  background: linear-gradient(160deg, #1a2238 0%, #131a2f 100%);
+}
+
+@media only screen and (max-width: 1199px) {
+  .modern-home .hero-content-2 .title {
+    font-size: 40px;
+  }
+
+  .modern-home .featured-employer,
+  .modern-home .job-location,
+  .modern-home .job-section,
+  .modern-home .testimonial-section,
+  .modern-home .blog-section {
+    padding-top: 78px !important;
+    padding-bottom: 78px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .modern-home .hero-item {
+    min-height: 60vh;
+  }
+
+  .modern-home .hero-content-2 {
+    margin-top: 24px;
+  }
+
+  .modern-home .hero-content-2 .title {
+    font-size: 34px;
+  }
+
+  .modern-home .single-funfact {
+    border-right: 0;
+    border-bottom: 1px solid #dce2ef;
+    margin-bottom: 10px;
+  }
+
+  .modern-home .single-funfact:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .modern-home .header-absolute {
+    top: 0;
+  }
+
+  .modern-home .hero-content-2 .title {
+    font-size: 28px;
+    line-height: 1.16;
+  }
+
+  .modern-home .hero-content-2 p {
+    font-size: 14px;
+  }
+
+  .modern-home .job-search-wrap {
+    margin-top: 26px;
+  }
+
+  .modern-home .featured-employer,
+  .modern-home .job-location,
+  .modern-home .job-section,
+  .modern-home .testimonial-section,
+  .modern-home .blog-section,
+  .modern-home .cta-section {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+}
+
+/*----------------------------------------*/
+/*  2025 SaaS UI Theme (Scoped)           */
+/*----------------------------------------*/
+.modern-home.saas-2025 {
+  --saas-bg: #f9fafb;
+  --saas-surface: #ffffff;
+  --saas-primary: #6366f1;
+  --saas-primary-hover: #4f46e5;
+  --saas-accent: #c9a227;
+  --saas-text: #0f172a;
+  --saas-text-muted: #64748b;
+  --saas-border: #e2e8f0;
+  --saas-radius: 12px;
+  --saas-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background: var(--saas-bg);
+  color: var(--saas-text);
+  font-family: "Inter", sans-serif;
+}
+
+.modern-home.saas-2025 p,
+.modern-home.saas-2025 .text,
+.modern-home.saas-2025 .count-job,
+.modern-home.saas-2025 .employer-location,
+.modern-home.saas-2025 .job-meta,
+.modern-home.saas-2025 .copyright p {
+  color: var(--saas-text-muted);
+}
+
+.modern-home.saas-2025 h1,
+.modern-home.saas-2025 h2,
+.modern-home.saas-2025 h3,
+.modern-home.saas-2025 h4,
+.modern-home.saas-2025 h5,
+.modern-home.saas-2025 h6,
+.modern-home.saas-2025 .title,
+.modern-home.saas-2025 .job-title a,
+.modern-home.saas-2025 .employer-name a,
+.modern-home.saas-2025 .city-name {
+  color: var(--saas-text);
+}
+
+.modern-home.saas-2025 a {
+  transition: all 0.2s ease;
+}
+
+.modern-home.saas-2025 .featured-employer,
+.modern-home.saas-2025 .job-location,
+.modern-home.saas-2025 .job-section,
+.modern-home.saas-2025 .blog-section,
+.modern-home.saas-2025 .testimonial-section,
+.modern-home.saas-2025 .cta-section,
+.modern-home.saas-2025 .footer-top-section {
+  padding-top: 72px !important;
+  padding-bottom: 72px !important;
+}
+
+.modern-home.saas-2025 .section-title-wrap {
+  margin-bottom: 28px !important;
+}
+
+.modern-home.saas-2025 .section-title > span {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--saas-text-muted);
+}
+
+.modern-home.saas-2025 .section-title .title {
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.modern-home.saas-2025 .header-absolute {
+  top: 14px;
+}
+
+.modern-home.saas-2025 .header-absolute .main-header {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--saas-border);
+  border-radius: var(--saas-radius);
+  box-shadow: var(--saas-shadow);
+  margin: 0 18px;
+  backdrop-filter: blur(8px);
+}
+
+.modern-home.saas-2025 .main-menu > ul > li > a {
+  color: var(--saas-text);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.modern-home.saas-2025 .jp-author.item a {
+  border: 1px solid var(--saas-border);
+  background: #fff;
+  color: var(--saas-text);
+  border-radius: 10px;
+  padding: 9px 14px;
+}
+
+.modern-home.saas-2025 .jp-author-action.item a {
+  background: var(--saas-primary);
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.modern-home.saas-2025 .jp-author-action.item a:hover {
+  background: var(--saas-primary-hover);
+}
+
+/* Hero */
+.modern-home.saas-2025 .hero-item {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.modern-home.saas-2025 .hero-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.48) 0%, rgba(15, 23, 42, 0.34) 45%, rgba(15, 23, 42, 0.5) 100%);
+}
+
+.modern-home.saas-2025 .hero-content-2 {
+  position: relative;
+  z-index: 1;
+  margin: 36px auto 0;
+  text-align: center;
+  max-width: 980px;
+}
+
+.modern-home.saas-2025 .hero-content-2 .title {
+  color: #ffffff;
+  font-size: 52px;
+  line-height: 1.1;
+  max-width: 860px;
+  margin: 0 auto 14px;
+}
+
+.modern-home.saas-2025 .hero-content-2 > p {
+  color: rgba(255, 255, 255, 0.86);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.modern-home.saas-2025 .hero-action-btns {
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+
+.modern-home.saas-2025 .hero-action-btns .ht-btn {
+  border-radius: 10px;
+  background: var(--saas-primary);
+  border: 1px solid var(--saas-primary);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.modern-home.saas-2025 .hero-action-btns .ht-btn:hover {
+  background: var(--saas-primary-hover);
+  border-color: var(--saas-primary-hover);
+}
+
+.modern-home.saas-2025 .hero-action-btns .transparent-btn-two {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.modern-home.saas-2025 .job-search-wrap {
+  margin-top: 34px;
+  background: var(--saas-surface);
+  border: 1px solid var(--saas-border);
+  border-radius: var(--saas-radius);
+  box-shadow: var(--saas-shadow);
+  padding: 12px;
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item {
+  background: var(--saas-surface);
+  border: 1px solid var(--saas-border);
+  border-radius: 10px;
+  min-height: 56px;
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item input,
+.modern-home.saas-2025 .job-search-wrap .single-field-item .nice-select {
+  color: var(--saas-text);
+  font-size: 14px;
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item i {
+  color: var(--saas-text-muted);
+}
+
+.modern-home.saas-2025 .submit-btn .ht-btn {
+  min-height: 56px;
+  width: 100%;
+  border-radius: 10px;
+  background: var(--saas-primary);
+  border: 1px solid var(--saas-primary);
+}
+
+.modern-home.saas-2025 .submit-btn .ht-btn:hover {
+  background: var(--saas-primary-hover);
+  border-color: var(--saas-primary-hover);
+}
+
+.modern-home.saas-2025 .trending-keywords {
+  display: none;
+}
+
+/* Reusable Card Style */
+.modern-home.saas-2025 .single-feature,
+.modern-home.saas-2025 .employer-item,
+.modern-home.saas-2025 .single-job,
+.modern-home.saas-2025 .single-job-location,
+.modern-home.saas-2025 .single-blog,
+.modern-home.saas-2025 .single-testimonial {
+  background: var(--saas-surface);
+  border: 1px solid var(--saas-border);
+  border-radius: var(--saas-radius);
+  box-shadow: var(--saas-shadow);
+  transition: all 0.2s ease;
+}
+
+.modern-home.saas-2025 .single-feature:hover,
+.modern-home.saas-2025 .employer-item:hover,
+.modern-home.saas-2025 .single-job:hover,
+.modern-home.saas-2025 .single-job-location:hover,
+.modern-home.saas-2025 .single-blog:hover,
+.modern-home.saas-2025 .single-testimonial:hover {
+  transform: translateY(-4px);
+}
+
+.modern-home.saas-2025 .feature-section {
+  background: transparent;
+}
+
+.modern-home.saas-2025 .single-feature {
+  padding: 24px;
+}
+
+.modern-home.saas-2025 .single-feature .feature-icon i {
+  color: var(--saas-primary);
+}
+
+/* Featured companies grid */
+.modern-home.saas-2025 .row-five-column {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  border: 0;
+}
+
+.modern-home.saas-2025 .row-five-column > [class*="col-"] {
+  max-width: 100%;
+  width: 100%;
+  flex: 0 0 100%;
+  padding: 0;
+}
+
+.modern-home.saas-2025 .employer-item {
+  height: 100%;
+  padding: 20px 16px;
+  border-left: 0;
+  border-right: 0;
+}
+
+.modern-home.saas-2025 .employer-item .employer-image img {
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+
+.modern-home.saas-2025 .employer-item:hover .employer-image img {
+  transform: scale(1.04);
+}
+
+/* Places cards */
+.modern-home.saas-2025 .single-job-location {
+  overflow: hidden;
+}
+
+.modern-home.saas-2025 .single-job-location .overlay-gradient {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.02) 30%, rgba(15, 23, 42, 0.68) 100%);
+}
+
+.modern-home.saas-2025 .single-job-location .city-name,
+.modern-home.saas-2025 .single-job-location .count-job {
+  color: #ffffff;
+}
+
+/* Featured employers section */
+.modern-home.saas-2025 .featured-employer {
+  background: var(--saas-bg);
+}
+
+.modern-home.saas-2025 .featured-employer .section-title-wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.modern-home.saas-2025 .featured-employer .section-title > span {
+  color: #64748b;
+}
+
+.modern-home.saas-2025 .dijitprogram-link a {
+  color: var(--saas-text);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.modern-home.saas-2025 .row-five-column {
+  margin-top: 4px;
+}
+
+.modern-home.saas-2025 .employer-item {
+  padding: 22px 18px 18px;
+  border: 1px solid var(--saas-border);
+  border-radius: var(--saas-radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.modern-home.saas-2025 .employer-item:hover {
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.modern-home.saas-2025 .employer-item .featured-employer-label,
+.modern-home.saas-2025 .employer-item .rating {
+  top: 16px;
+}
+
+.modern-home.saas-2025 .employer-item .featured-employer-label {
+  left: 16px;
+  border-radius: 999px;
+  background: #22c55e;
+  font-size: 12px;
+  line-height: 22px;
+  padding: 0 10px;
+}
+
+.modern-home.saas-2025 .employer-item .rating {
+  right: 16px;
+}
+
+.modern-home.saas-2025 .employer-item .rating .rating-point {
+  border-radius: 999px;
+  min-width: 34px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+}
+
+.modern-home.saas-2025 .employer-item .employer-image {
+  width: 100%;
+  height: 120px;
+  margin: 20px 0 8px;
+  justify-content: center;
+}
+
+.modern-home.saas-2025 .employer-item .employer-image img {
+  max-height: 92px;
+  width: auto;
+  object-fit: contain;
+}
+
+.modern-home.saas-2025 .employer-item .employer-info-top {
+  width: 100%;
+  margin-top: auto;
+}
+
+.modern-home.saas-2025 .employer-item .employer-info-top .employer-location {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 6px;
+  letter-spacing: 0.04em;
+}
+
+.modern-home.saas-2025 .employer-item .employer-info-top .employer-name {
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.modern-home.saas-2025 .employer-item .employer-info-top .employer-name i {
+  font-size: 13px;
+}
+
+/* Job listing scanability */
+.modern-home.saas-2025 .job-section {
+  background: transparent;
+}
+
+.modern-home.saas-2025 .single-job {
+  border-left: 0;
+}
+
+.modern-home.saas-2025 .single-job .info-top {
+  padding: 20px;
+}
+
+.modern-home.saas-2025 .single-job .job-title a {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.modern-home.saas-2025 .single-job .job-salary {
+  color: var(--saas-accent);
+  font-weight: 700;
+}
+
+.modern-home.saas-2025 .single-job .save-job {
+  min-width: 84px;
+  text-align: center;
+  border: 1px solid var(--saas-primary);
+  border-radius: 10px;
+  background: var(--saas-primary);
+  color: #fff;
+  padding: 5px 10px;
+  line-height: 1.2;
+}
+
+.modern-home.saas-2025 .single-job .save-job i {
+  display: none;
+}
+
+.modern-home.saas-2025 .single-job .save-job::after {
+  content: "Apply";
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.modern-home.saas-2025 .single-job .save-job:hover {
+  background: var(--saas-primary-hover);
+  border-color: var(--saas-primary-hover);
+}
+
+.modern-home.saas-2025 .dijitprogram-tab-menu ul li a {
+  border: 1px solid var(--saas-border);
+  border-radius: 10px;
+  color: var(--saas-text-muted);
+  background: #fff;
+  font-weight: 500;
+  padding: 8px 14px;
+}
+
+.modern-home.saas-2025 .dijitprogram-tab-menu ul li a.active {
+  color: #fff;
+  background: var(--saas-primary);
+  border-color: var(--saas-primary);
+}
+
+/* Blog */
+.modern-home.saas-2025 .blog-section {
+  background: transparent;
+}
+
+.modern-home.saas-2025 .single-blog .blog-content {
+  padding: 20px;
+}
+
+.modern-home.saas-2025 .single-blog .title a {
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.modern-home.saas-2025 .single-blog .meta li,
+.modern-home.saas-2025 .single-blog .desc {
+  color: var(--saas-text-muted);
+}
+
+/* Testimonials */
+.modern-home.saas-2025 .testimonial-section {
+  background: transparent;
+}
+
+.modern-home.saas-2025 .single-testimonial {
+  padding: 24px;
+}
+
+.modern-home.saas-2025 .single-testimonial p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--saas-text-muted);
+}
+
+.modern-home.saas-2025 .single-testimonial .author-info .name {
+  color: var(--saas-text);
+  font-weight: 600;
+}
+
+/* Footer */
+.modern-home.saas-2025 .footer-section {
+  background: #0f172a;
+}
+
+.modern-home.saas-2025 .footer-top-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.modern-home.saas-2025 .footer-widget .footer-widget-title {
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+}
+
+.modern-home.saas-2025 .footer-widget p,
+.modern-home.saas-2025 .footer-list li a,
+.modern-home.saas-2025 .copyright p,
+.modern-home.saas-2025 .footer-social-list li a {
+  color: #c7d2fe;
+}
+
+.modern-home.saas-2025 .footer-list li a:hover {
+  color: #ffffff;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1199px) {
+  .modern-home.saas-2025 .row-five-column {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .modern-home.saas-2025 .hero-content-2 .title {
+    font-size: 44px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .modern-home.saas-2025 .hero-item {
+    min-height: 62vh;
+  }
+
+  .modern-home.saas-2025 .hero-content-2 {
+    margin-top: 20px;
+  }
+
+  .modern-home.saas-2025 .hero-content-2 .title {
+    font-size: 36px;
+  }
+
+  .modern-home.saas-2025 .featured-employer,
+  .modern-home.saas-2025 .job-location,
+  .modern-home.saas-2025 .job-section,
+  .modern-home.saas-2025 .blog-section,
+  .modern-home.saas-2025 .testimonial-section,
+  .modern-home.saas-2025 .cta-section,
+  .modern-home.saas-2025 .footer-top-section {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+
+  .modern-home.saas-2025 .row-five-column {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .modern-home.saas-2025 .hero-content-2 .title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .modern-home.saas-2025 .hero-content-2 > p {
+    font-size: 14px;
+  }
+
+  .modern-home.saas-2025 .job-search-wrap {
+    padding: 10px;
+    margin-top: 24px;
+  }
+
+  .modern-home.saas-2025 .row-five-column {
+    grid-template-columns: 1fr;
+  }
+
+  .modern-home.saas-2025 .section-title .title {
+    font-size: 28px;
+  }
+}
+
+/* Final reference-matching overrides */
+.modern-home.saas-2025 .hero-item .container {
+  width: 100%;
+}
+
+.modern-home.saas-2025 .hero-content-2 {
+  max-width: 1000px;
+}
+
+.modern-home.saas-2025 .hero-content-2.left,
+.modern-home.saas-2025 .hero-content-2 {
+  text-align: center;
+}
+
+.modern-home.saas-2025 .hero-content-2 .title {
+  font-size: 56px;
+  max-width: 920px;
+  margin-bottom: 18px;
+}
+
+.modern-home.saas-2025 .hero-action-btns {
+  display: none;
+}
+
+.modern-home.saas-2025 .job-search-wrap {
+  max-width: 980px;
+  padding: 14px;
+  border-radius: 14px;
+  margin-top: 28px;
+}
+
+.modern-home.saas-2025 .job-search-form .row-5 {
+  --bs-gutter-x: 10px;
+  --bs-gutter-y: 10px;
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item {
+  min-height: 54px;
+  border-radius: 999px;
+  background: #fff;
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item input,
+.modern-home.saas-2025 .job-search-wrap .single-field-item .nice-select {
+  height: 54px;
+  line-height: 54px;
+  padding-left: 46px;
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item .btn-action-location,
+.modern-home.saas-2025 .job-search-wrap .single-field-item i {
+  left: 18px;
+}
+
+.modern-home.saas-2025 .job-search-wrap .submit-btn .ht-btn {
+  height: 54px;
+  border-radius: 999px;
+}
+
+.modern-home.saas-2025 .funfact-section {
+  padding-top: 22px;
+  padding-bottom: 14px;
+  margin-top: 0;
+}
+
+.modern-home.saas-2025 .funfact-section .container {
+  max-width: 1140px;
+}
+
+.modern-home.saas-2025 .single-funfact {
+  padding: 12px 14px;
+  border-right: 0;
+  text-align: center;
+}
+
+.modern-home.saas-2025 .single-funfact .funfact-content .counter {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.modern-home.saas-2025 .single-funfact .funfact-content .text {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+
+.modern-home.saas-2025 .featured-employer,
+.modern-home.saas-2025 .job-location,
+.modern-home.saas-2025 .job-section,
+.modern-home.saas-2025 .blog-section,
+.modern-home.saas-2025 .testimonial-section,
+.modern-home.saas-2025 .cta-section,
+.modern-home.saas-2025 .footer-top-section {
+  padding-top: 68px !important;
+  padding-bottom: 68px !important;
+}
+
+.modern-home.saas-2025 .section-title-wrap {
+  margin-bottom: 24px !important;
+}
+
+.modern-home.saas-2025 .section-title,
+.modern-home.saas-2025 .dijitprogram-link {
+  align-items: center;
+}
+
+.modern-home.saas-2025 .row-five-column {
+  gap: 14px;
+}
+
+.modern-home.saas-2025 .employer-item {
+  padding: 16px 12px;
+  border-radius: 12px;
+}
+
+.modern-home.saas-2025 .employer-item .employer-name a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.modern-home.saas-2025 .job-location .job-location-slider .col-lg-3 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.modern-home.saas-2025 .job-location .single-job-location {
+  min-height: 255px;
+}
+
+.modern-home.saas-2025 .single-job-location .location-info {
+  padding: 18px;
+}
+
+.modern-home.saas-2025 .single-job-location .city-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.modern-home.saas-2025 .single-job-location .count-job {
+  font-size: 12px;
+}
+
+.modern-home.saas-2025 .job-section .single-job {
+  background: #fff;
+  border: 1px solid var(--saas-border);
+  border-radius: 12px;
+}
+
+.modern-home.saas-2025 .single-job .job-meta {
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.modern-home.saas-2025 .single-job .job-meta > div {
+  color: var(--saas-text-muted);
+}
+
+.modern-home.saas-2025 .single-job .job-type a,
+.modern-home.saas-2025 .single-job .featured-label {
+  color: var(--saas-primary);
+}
+
+.modern-home.saas-2025 .single-job .save-job {
+  min-width: 92px;
+  padding: 8px 12px;
+}
+
+.modern-home.saas-2025 .single-job .save-job:hover {
+  color: #fff;
+}
+
+.modern-home.saas-2025 .single-blog .blog-image,
+.modern-home.saas-2025 .single-blog .blog-image img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.modern-home.saas-2025 .single-blog .blog-content {
+  padding: 18px;
+}
+
+.modern-home.saas-2025 .single-blog .title a {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.modern-home.saas-2025 .single-testimonial {
+  background: #fff;
+  padding: 22px;
+}
+
+.modern-home.saas-2025 .cta-section {
+  height: auto;
+}
+
+.modern-home.saas-2025 .cta-section .container {
+  max-width: 1140px;
+}
+
+.modern-home.saas-2025 .cta-wrapper {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.modern-home.saas-2025 .cta-wrapper .row {
+  align-items: center;
+}
+
+.modern-home.saas-2025 .cta-wrapper .cta-content .title {
+  font-size: 34px;
+  line-height: 1.15;
+}
+
+.modern-home.saas-2025 .cta-wrapper .cta-content p {
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 540px;
+}
+
+.modern-home.saas-2025 .cta-wrapper .cta-image {
+  display: flex;
+  justify-content: center;
+}
+
+.modern-home.saas-2025 .footer-section {
+  background: #111827;
+}
+
+.modern-home.saas-2025 .footer-top-section {
+  padding-top: 70px !important;
+  padding-bottom: 40px !important;
+}
+
+.modern-home.saas-2025 .footer-bottom {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.modern-home.saas-2025 .footer-widget,
+.modern-home.saas-2025 .footer-about,
+.modern-home.saas-2025 .footer-widget p,
+.modern-home.saas-2025 .footer-list li a {
+  color: #cbd5e1;
+}
+
+.modern-home.saas-2025 .footer-widget .footer-widget-title {
+  color: #f8fafc;
+}
+
+/* Typography scale reduction */
+.modern-home.saas-2025 {
+  font-size: 14px;
+}
+
+.modern-home.saas-2025 p,
+.modern-home.saas-2025 .employer-location,
+.modern-home.saas-2025 .job-meta,
+.modern-home.saas-2025 .count-job,
+.modern-home.saas-2025 .footer-widget p,
+.modern-home.saas-2025 .footer-list li a,
+.modern-home.saas-2025 .copyright p,
+.modern-home.saas-2025 .section-title > span,
+.modern-home.saas-2025 .dijitprogram-link a,
+.modern-home.saas-2025 .trending-keywords .title,
+.modern-home.saas-2025 .trending-keywords a,
+.modern-home.saas-2025 .single-job .job-meta > div,
+.modern-home.saas-2025 .single-blog .meta li,
+.modern-home.saas-2025 .single-blog .desc,
+.modern-home.saas-2025 .single-testimonial p {
+  font-size: 13px;
+}
+
+.modern-home.saas-2025 .main-menu > ul > li > a,
+.modern-home.saas-2025 .jp-author.item a,
+.modern-home.saas-2025 .jp-author-action.item a,
+.modern-home.saas-2025 .hero-action-btns .ht-btn,
+.modern-home.saas-2025 .submit-btn .ht-btn,
+.modern-home.saas-2025 .dijitprogram-tab-menu ul li a,
+.modern-home.saas-2025 .single-job .save-job,
+.modern-home.saas-2025 .single-feature .title,
+.modern-home.saas-2025 .single-job .job-type a,
+.modern-home.saas-2025 .single-job .featured-label {
+  font-size: 12px;
+}
+
+.modern-home.saas-2025 .section-title .title,
+.modern-home.saas-2025 .single-blog .title a,
+.modern-home.saas-2025 .single-testimonial .author-info .name,
+.modern-home.saas-2025 .single-job .job-title a,
+.modern-home.saas-2025 .employer-item .employer-name a,
+.modern-home.saas-2025 .cta-wrapper .cta-content .title {
+  font-size: 0.96em;
+}
+
+.modern-home.saas-2025 .hero-content-2 .title {
+  font-size: 50px;
+}
+
+.modern-home.saas-2025 .single-funfact .funfact-content .counter {
+  font-size: 26px;
+}
+
+.modern-home.saas-2025 .single-job-location .city-name {
+  font-size: 16px;
+}
+
+.modern-home.saas-2025 .single-job .job-title a {
+  font-size: 18px;
+}
+
+.modern-home.saas-2025 .single-blog .title a {
+  font-size: 18px;
+}
+
+.modern-home.saas-2025 .footer-widget .footer-widget-title {
+  font-size: 14px;
+}
+
+/* Header, hero, and search bar final pass */
+.modern-home.saas-2025 .header-absolute {
+  top: 0;
+}
+
+.modern-home.saas-2025 .header-absolute .main-header {
+  height: 70px;
+  margin: 14px 24px 0;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid var(--saas-border);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+}
+
+.modern-home.saas-2025 .header-absolute .main-header > .container-fluid {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.modern-home.saas-2025 .header-absolute .row {
+  align-items: center;
+}
+
+.modern-home.saas-2025 .header-btn-action {
+  align-items: center;
+}
+
+.modern-home.saas-2025 .main-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.modern-home.saas-2025 .main-menu > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.modern-home.saas-2025 .main-menu > ul > li {
+  margin: 0;
+}
+
+.modern-home.saas-2025 .main-menu > ul > li > a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--saas-text);
+  padding: 0;
+}
+
+.modern-home.saas-2025 .main-menu > ul > li > a .label-status,
+.modern-home.saas-2025 .main-menu > ul > li > a .icon-arrow {
+  display: none;
+}
+
+.modern-home.saas-2025 .btn-action-wrap {
+  gap: 12px;
+}
+
+.modern-home.saas-2025 .btn-action-wrap .item.jp-author-action {
+  height: auto;
+  background: transparent;
+  margin-right: 0;
+  align-items: center;
+}
+
+.modern-home.saas-2025 .jp-author.item a {
+  border: 0;
+  background: transparent;
+  padding: 10px 0;
+  color: var(--saas-text);
+  font-weight: 600;
+}
+
+.modern-home.saas-2025 .jp-author-action.item a {
+  background: var(--saas-primary);
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 18px;
+  min-height: 40px;
+  box-shadow: none;
+}
+
+.modern-home.saas-2025 .jp-author-action.item a:hover {
+  background: var(--saas-primary-hover);
+}
+
+.modern-home.saas-2025 .hero-item {
+  min-height: 100vh;
+}
+
+.modern-home.saas-2025 .hero-item::before {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.46) 0%, rgba(15, 23, 42, 0.58) 100%);
+}
+
+.modern-home.saas-2025 .hero-content-2 {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 120px;
+  text-align: center;
+}
+
+.modern-home.saas-2025 .hero-content-2 .title {
+  font-size: 50px;
+  line-height: 1.06;
+  max-width: 1100px;
+  margin: 0 auto 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+
+.modern-home.saas-2025 .hero-content-2 > p {
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #cbd5e1;
+}
+
+.modern-home.saas-2025 .hero-action-btns {
+  display: none;
+}
+
+.modern-home.saas-2025 .job-search-wrap {
+  max-width: 980px;
+  margin: 34px auto 0;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid var(--saas-border);
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.modern-home.saas-2025 .job-search-form form .row-5 {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0;
+}
+
+.modern-home.saas-2025 .job-search-form form .row-5 > div {
+  flex: 1 1 0;
+  max-width: none;
+}
+
+.modern-home.saas-2025 .job-search-form form .row-5 > div:not(:last-child) .single-field-item {
+  border-right: 1px solid var(--saas-border);
+  border-radius: 0;
+}
+
+.modern-home.saas-2025 .job-search-form form .row-5 > div:first-child .single-field-item {
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+}
+
+.modern-home.saas-2025 .job-search-form form .row-5 > div:last-child .submit-btn .ht-btn {
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item {
+  min-height: 56px;
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item input,
+.modern-home.saas-2025 .job-search-wrap .single-field-item .nice-select {
+  height: 56px;
+  line-height: 56px;
+  padding-left: 46px;
+  font-size: 14px;
+  color: var(--saas-text);
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item i,
+.modern-home.saas-2025 .job-search-wrap .single-field-item .btn-action-location {
+  left: 18px;
+  color: var(--saas-text-muted);
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item .btn-action-location {
+  display: none;
+}
+
+.modern-home.saas-2025 .job-search-wrap .submit-btn {
+  height: 100%;
+}
+
+.modern-home.saas-2025 .job-search-wrap .submit-btn .ht-btn {
+  width: 100%;
+  min-height: 56px;
+  border-radius: 999px;
+  background: var(--saas-primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+.modern-home.saas-2025 .job-search-wrap .submit-btn .ht-btn:hover {
+  background: var(--saas-primary-hover);
+}
+
+.modern-home.saas-2025 .trending-keywords {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .modern-home.saas-2025 .header-absolute .main-header {
+    margin: 10px 12px 0;
+    height: auto;
+  }
+
+  .modern-home.saas-2025 .header-absolute .main-header > .container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .modern-home.saas-2025 .hero-content-2 {
+    padding-top: 110px;
+  }
+
+  .modern-home.saas-2025 .hero-content-2 .title {
+    font-size: 40px;
+  }
+
+  .modern-home.saas-2025 .job-search-form form .row-5 {
+    flex-wrap: wrap;
+  }
+
+  .modern-home.saas-2025 .job-search-form form .row-5 > div {
+    flex: 1 1 100%;
+  }
+
+  .modern-home.saas-2025 .job-search-form form .row-5 > div:not(:last-child) .single-field-item {
+    border-right: 0;
+    border-bottom: 1px solid var(--saas-border);
+    border-radius: 0;
+  }
+
+  .modern-home.saas-2025 .job-search-form form .row-5 > div:first-child .single-field-item {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+  }
+
+  .modern-home.saas-2025 .job-search-form form .row-5 > div:last-child .submit-btn .ht-btn {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .modern-home.saas-2025 .hero-item {
+    min-height: 88vh;
+  }
+
+  .modern-home.saas-2025 .hero-content-2 {
+    padding-top: 98px;
+  }
+
+  .modern-home.saas-2025 .hero-content-2 .title {
+    font-size: 30px;
+  }
+
+  .modern-home.saas-2025 .hero-content-2 > p {
+    font-size: 14px;
+  }
+
+  .modern-home.saas-2025 .job-search-wrap {
+    border-radius: 16px;
+    margin-top: 26px;
+  }
+
+  .modern-home.saas-2025 .job-search-form form .row-5 > div:first-child .single-field-item,
+  .modern-home.saas-2025 .job-search-form form .row-5 > div:last-child .submit-btn .ht-btn {
+    border-radius: 12px;
+  }
+
+  .modern-home.saas-2025 .job-search-wrap .single-field-item input,
+  .modern-home.saas-2025 .job-search-wrap .single-field-item .nice-select,
+  .modern-home.saas-2025 .job-search-wrap .submit-btn .ht-btn {
+    height: 52px;
+    line-height: 52px;
+    min-height: 52px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .modern-home.saas-2025 .hero-content-2 .title {
+    font-size: 36px;
+  }
+
+  .modern-home.saas-2025 .job-search-wrap {
+    max-width: 100%;
+  }
+
+  .modern-home.saas-2025 .row-five-column {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .modern-home.saas-2025 .cta-wrapper .cta-content .title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .modern-home.saas-2025 .hero-item {
+    min-height: 58vh;
+  }
+
+  .modern-home.saas-2025 .hero-content-2 .title {
+    font-size: 26px;
+  }
+
+  .modern-home.saas-2025 .job-search-wrap .single-field-item,
+  .modern-home.saas-2025 .job-search-wrap .submit-btn .ht-btn {
+    border-radius: 12px;
+  }
+
+  .modern-home.saas-2025 .featured-employer,
+  .modern-home.saas-2025 .job-location,
+  .modern-home.saas-2025 .job-section,
+  .modern-home.saas-2025 .blog-section,
+  .modern-home.saas-2025 .testimonial-section,
+  .modern-home.saas-2025 .cta-section {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+  }
+
+  .modern-home.saas-2025 .row-five-column {
+    grid-template-columns: 1fr;
+  }
+
+  .modern-home.saas-2025 .cta-wrapper .cta-content .title {
+    font-size: 24px;
+  }
 }
