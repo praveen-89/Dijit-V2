@@ -617,6 +617,70 @@ h6 {
   }
 }
 
+ 
+.modern-home.saas-2025 .hero-item::before {
+  display: none !important;
+  background: none !important;
+}
+
+.modern-home.saas-2025 .hero-item {
+  background-position: left center !important;
+}
+
+.modern-home.saas-2025 .hero-content-2 {
+  text-align: left !important;
+  margin-left: 0 !important;
+  max-width: 720px !important;
+}
+
+.modern-home.saas-2025 .hero-content-2.left {
+  text-align: left !important;
+}
+
+.modern-home.saas-2025 .hero-copy {
+  transform: translateY(60px);
+}
+
+.modern-home.saas-2025 .hero-copy .trusted-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin: 0 0 14px;
+  padding: 7px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  color: #fff !important;
+}
+
+.modern-home.saas-2025 .hero-content-2 .title {
+  color: var(--saas-text) !important;
+}
+
+/* Hero subtitle: white with 50% opacity (targets the paragraph immediately after the H2) */
+.modern-home.saas-2025 .hero-copy h2 + p {
+  color: rgba(255,255,255,0.5) !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .modern-home.saas-2025 .hero-content-2,
+  .modern-home.saas-2025 .hero-content-2.left {
+    text-align: center !important;
+    max-width: 100% !important;
+  }
+
+  .modern-home.saas-2025 .hero-copy {
+    transform: translateY(40px);
+  }
+
+  .modern-home.saas-2025 .hero-copy .trusted-text {
+    margin-bottom: 12px;
+  }
+}
+
 .modern-home.saas-2025 .job-section .section-title .title {
   font-size: 34px;
   line-height: 1.25;
@@ -17520,15 +17584,38 @@ body.template-color-1 .header-mobile {
   top: 0;
 }
 
+/* Make the homepage header sit in the normal flow so the nav is flush to the top
+   and the hero content flows below it (no gap). */
+.modern-home.saas-2025 .header-absolute {
+  position: relative !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100%;
+  z-index: 999;
+  border: none !important;
+}
+
+.modern-home.saas-2025 .header-sticky {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 999 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+}
+
+/* Style the homepage header as a solid black rectangle */
 .modern-home.saas-2025 .header-absolute .main-header {
   height: 70px;
-  margin: 14px 24px 0;
-  background: rgba(10, 17, 37, 0.54);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  margin: 0 !important;
+  padding: 0 40px;
+  background: #000000 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .modern-home.saas-2025 .header-absolute .main-header > .container-fluid {
@@ -17606,6 +17693,10 @@ body.template-color-1 .header-mobile {
 
 .modern-home.saas-2025 .hero-item {
   min-height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  border-top: none !important;
 }
 
 .modern-home.saas-2025 .hero-item::before {
@@ -17615,7 +17706,7 @@ body.template-color-1 .header-mobile {
 .modern-home.saas-2025 .hero-content-2 {
   max-width: 1000px;
   margin: 0 auto;
-  padding-top: 120px;
+  padding-top: 80px;
   text-align: center;
 }
 
@@ -17861,22 +17952,28 @@ body.template-color-1 .header-mobile {
 
 /* Final homepage contrast override */
 .modern-home.saas-2025 .header-absolute .main-header {
-  background: rgba(10, 17, 37, 0.54) !important;
-  border-color: rgba(255, 255, 255, 0.12) !important;
+  background: #000000 !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .modern-home.saas-2025 .header-sticky.is-sticky {
+  position: fixed !important;
   top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
   z-index: 999 !important;
-  background: rgba(10, 17, 37, 0.96) !important;
+  background: #000000 !important;
+  width: 100% !important;
 }
 
 .modern-home.saas-2025 .header-sticky.is-sticky .main-header {
   margin: 0 !important;
   border-radius: 0 !important;
-  background: rgba(10, 17, 37, 0.96) !important;
-  border-color: rgba(255, 255, 255, 0.08) !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22) !important;
+  background: #000000 !important;
+  border: none !important;
+  box-shadow: none !important;
+  width: 100% !important;
 }
 
 .modern-home.saas-2025 .header-sticky.is-sticky .main-header > .container-fluid {
@@ -17898,6 +17995,19 @@ body.template-color-1 .header-mobile {
 .modern-home.saas-2025 .jp-author.item a i,
 .modern-home.saas-2025 .jp-author.item a span {
   color: #ffffff !important;
+}
+
+/* Ensure nav menu displays properly on homepage */
+.modern-home.saas-2025 .header-absolute .main-header > .container-fluid {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.modern-home.saas-2025 .header-absolute .row {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
 .modern-home.saas-2025 .hero-content-2 .title,
