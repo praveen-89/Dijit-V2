@@ -15247,7 +15247,7 @@ body.template-color-1 .header-mobile {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(10, 17, 37, 0.74) 0%, rgba(10, 17, 37, 0.42) 52%, rgba(10, 17, 37, 0.2) 100%);
+  background: linear-gradient(90deg, rgba(10, 17, 37, 0.45) 0%, rgba(10, 17, 37, 0.25) 52%, rgba(10, 17, 37, 0.1) 100%);
 }
 
 .modern-home .hero-content-2 {
@@ -15943,7 +15943,7 @@ body.template-color-1 .header-mobile {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.48) 0%, rgba(15, 23, 42, 0.34) 45%, rgba(15, 23, 42, 0.5) 100%);
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.28) 0%, rgba(15, 23, 42, 0.2) 45%, rgba(15, 23, 42, 0.3) 100%);
 }
 
 .modern-home.saas-2025 .hero-content-2 {
@@ -16822,7 +16822,7 @@ body.template-color-1 .header-mobile {
 }
 
 .modern-home.saas-2025 .hero-item::before {
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.46) 0%, rgba(15, 23, 42, 0.58) 100%);
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.25) 0%, rgba(15, 23, 42, 0.35) 100%);
 }
 
 .modern-home.saas-2025 .hero-content-2 {
@@ -17076,6 +17076,34 @@ body.template-color-1 .header-mobile {
 .modern-home.saas-2025 .header-absolute .main-header {
   background: rgba(10, 17, 37, 0.54) !important;
   border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.modern-home.saas-2025 .header-sticky.is-sticky {
+  top: 0 !important;
+  z-index: 999 !important;
+  background: rgba(10, 17, 37, 0.96) !important;
+}
+
+.modern-home.saas-2025 .header-sticky.is-sticky .main-header {
+  margin: 0 !important;
+  border-radius: 0 !important;
+  background: rgba(10, 17, 37, 0.96) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22) !important;
+}
+
+.modern-home.saas-2025 .header-sticky.is-sticky .main-header > .container-fluid {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.modern-home.saas-2025 .header-sticky.is-sticky .main-menu > ul > li > a {
+  color: #ffffff !important;
+}
+
+.modern-home.saas-2025 .header-sticky.is-sticky .jp-author.item a,
+.modern-home.saas-2025 .header-sticky.is-sticky .jp-author-action.item a {
+  color: #ffffff !important;
 }
 
 .modern-home.saas-2025 .main-menu > ul > li > a,
