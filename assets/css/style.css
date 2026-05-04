@@ -425,7 +425,7 @@ img {
 }
 
 .bg_image--1 {
-  background-image: url(../images/bg/hero-office-space.webp);
+  background-image: url(../images/bg/hero-office-space.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -2852,7 +2852,7 @@ body.template-color-1 .header-absolute .logo a {
   line-height: 20px;
   font-weight: 600;
   letter-spacing: 0.25px;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #ffffff;
   display: block;
   padding: 30px 0;
@@ -3023,7 +3023,7 @@ body.template-color-1 .header-absolute .logo a {
 }
 
 .sub-menu li a {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #333333;
   display: block;
   font-size: 15px;
@@ -15162,7 +15162,7 @@ body.template-color-1 .header-mobile {
   --mh-shadow: 0 16px 42px rgba(21, 31, 74, 0.08);
   background: radial-gradient(circle at 10% -10%, #e4ebff 0%, #f4f6fb 42%), #f4f6fb;
   color: var(--mh-text);
-  font-family: "Work Sans", "Segoe UI", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .modern-home h1,
@@ -15198,9 +15198,9 @@ body.template-color-1 .header-mobile {
 }
 
 .modern-home .header-absolute .main-header {
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 12px 32px rgba(18, 30, 68, 0.08);
+  background: rgba(10, 17, 37, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 12px 32px rgba(18, 30, 68, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   margin: 0 20px;
@@ -15209,15 +15209,25 @@ body.template-color-1 .header-mobile {
 .modern-home .main-menu > ul > li > a {
   font-size: 14px;
   font-weight: 600;
-  color: #2b3142;
+  color: #ffffff;
+}
+
+.modern-home .main-menu > ul > li > a:hover,
+.modern-home .main-menu > ul > li.active > a {
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .modern-home .jp-author.item a {
   border-radius: 999px;
-  border: 1px solid var(--mh-border);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   padding: 9px 16px;
-  color: #2d3448;
-  background: #fff;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.modern-home .jp-author.item a i,
+.modern-home .jp-author.item a span {
+  color: #ffffff;
 }
 
 .modern-home .jp-author-action.item a {
@@ -15262,6 +15272,10 @@ body.template-color-1 .header-mobile {
   max-width: 760px;
 }
 
+.modern-home .trusted-text {
+  color: #ffffff !important;
+}
+
 .modern-home .ht-btn,
 .modern-home .submit-btn .ht-btn {
   border-radius: 12px;
@@ -15279,22 +15293,35 @@ body.template-color-1 .header-mobile {
 }
 
 .modern-home .job-search-wrap {
-  background: rgba(255, 255, 255, 0.97);
-  border: 1px solid rgba(255, 255, 255, 0.85);
+  background: rgba(10, 17, 37, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   box-shadow: 0 28px 56px rgba(15, 29, 64, 0.18);
   border-radius: 18px;
   padding: 18px;
 }
 
 .modern-home .job-search-wrap .single-field-item {
-  background: var(--mh-surface-soft);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 12px;
-  border: 1px solid var(--mh-border);
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .modern-home .job-search-wrap .single-field-item input,
 .modern-home .job-search-wrap .single-field-item .nice-select {
-  color: #2f3647;
+  color: #ffffff;
+}
+
+.modern-home .job-search-wrap .single-field-item input::placeholder {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.modern-home .job-search-wrap .single-field-item i,
+.modern-home .job-search-wrap .single-field-item .btn-action-location,
+.modern-home .job-search-wrap .single-field-item .btn-action-location i,
+.modern-home .job-search-wrap .single-field-item .nice-select .current,
+.modern-home .job-search-wrap .single-field-item .nice-select::after {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.9);
 }
 
 .modern-home .trending-keywords {
@@ -16709,10 +16736,10 @@ body.template-color-1 .header-mobile {
 .modern-home.saas-2025 .header-absolute .main-header {
   height: 70px;
   margin: 14px 24px 0;
-  background: rgba(255, 255, 255, 0.96);
-  border: 1px solid var(--saas-border);
+  background: rgba(10, 17, 37, 0.54);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
   display: flex;
   align-items: center;
 }
@@ -16749,7 +16776,7 @@ body.template-color-1 .header-mobile {
 .modern-home.saas-2025 .main-menu > ul > li > a {
   font-size: 14px;
   font-weight: 600;
-  color: var(--saas-text);
+  color: #ffffff;
   padding: 0;
 }
 
@@ -16773,7 +16800,7 @@ body.template-color-1 .header-mobile {
   border: 0;
   background: transparent;
   padding: 10px 0;
-  color: var(--saas-text);
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -16811,14 +16838,15 @@ body.template-color-1 .header-mobile {
   max-width: 1100px;
   margin: 0 auto 18px;
   font-family: "Inter", sans-serif;
-  font-weight: 800;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .modern-home.saas-2025 .hero-content-2 > p {
   max-width: 620px;
   margin: 0 auto;
   font-size: 16px;
-  color: #cbd5e1;
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .modern-home.saas-2025 .hero-action-btns {
@@ -16828,10 +16856,11 @@ body.template-color-1 .header-mobile {
 .modern-home.saas-2025 .job-search-wrap {
   max-width: 980px;
   margin: 34px auto 0;
-  padding: 10px;
-  background: #fff;
-  border: 1px solid var(--saas-border);
+  padding: 6px;
+  background: rgba(10, 17, 37, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 999px;
+  overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
@@ -16852,37 +16881,37 @@ body.template-color-1 .header-mobile {
   border-radius: 0;
 }
 
-.modern-home.saas-2025 .job-search-form form .row-5 > div:first-child .single-field-item {
-  border-top-left-radius: 999px;
-  border-bottom-left-radius: 999px;
-}
-
-.modern-home.saas-2025 .job-search-form form .row-5 > div:last-child .submit-btn .ht-btn {
-  border-top-right-radius: 999px;
-  border-bottom-right-radius: 999px;
-}
-
 .modern-home.saas-2025 .job-search-wrap .single-field-item {
-  min-height: 56px;
-  border: 0;
-  background: transparent;
+  min-height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
 }
 
 .modern-home.saas-2025 .job-search-wrap .single-field-item input,
 .modern-home.saas-2025 .job-search-wrap .single-field-item .nice-select {
-  height: 56px;
-  line-height: 56px;
+  height: 48px;
+  line-height: 48px;
   padding-left: 46px;
   font-size: 14px;
-  color: var(--saas-text);
+  color: #ffffff;
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .modern-home.saas-2025 .job-search-wrap .single-field-item i,
 .modern-home.saas-2025 .job-search-wrap .single-field-item .btn-action-location {
   left: 18px;
-  color: var(--saas-text-muted);
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item .nice-select .current,
+.modern-home.saas-2025 .job-search-wrap .single-field-item .nice-select::after {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.9);
 }
 
 .modern-home.saas-2025 .job-search-wrap .single-field-item .btn-action-location {
@@ -17041,4 +17070,84 @@ body.template-color-1 .header-mobile {
   .modern-home.saas-2025 .cta-wrapper .cta-content .title {
     font-size: 24px;
   }
+}
+
+/* Final homepage contrast override */
+.modern-home.saas-2025 .header-absolute .main-header {
+  background: rgba(10, 17, 37, 0.54) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.modern-home.saas-2025 .main-menu > ul > li > a,
+.modern-home.saas-2025 .jp-author.item a,
+.modern-home.saas-2025 .jp-author.item a i,
+.modern-home.saas-2025 .jp-author.item a span {
+  color: #ffffff !important;
+}
+
+.modern-home.saas-2025 .hero-content-2 .title,
+.modern-home.saas-2025 .hero-content-2 > p,
+.modern-home.saas-2025 .trusted-text {
+  color: #ffffff !important;
+}
+
+.modern-home.saas-2025 .hero-content-2 > p {
+  color: rgba(255, 255, 255, 0.72) !important;
+  font-weight: 400 !important;
+}
+
+.modern-home.saas-2025 .trusted-text {
+  color: rgba(255, 255, 255, 0.72) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.01em;
+}
+
+.modern-home.saas-2025 .job-search-wrap {
+  background: #ffffff !important;
+  border-color: rgba(226, 232, 240, 0.95) !important;
+  border-radius: 25px !important;
+  overflow: visible !important;
+  position: relative;
+  z-index: 10;
+}
+
+.modern-home.saas-2025 .job-search-form {
+  border-radius: 25px;
+  position: relative;
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item {
+  background: #ffffff !important;
+  border-color: rgba(226, 232, 240, 0.95) !important;
+  position: relative;
+  z-index: 1;
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item .nice-select .list {
+  z-index: 1000 !important;
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item input,
+.modern-home.saas-2025 .job-search-wrap .single-field-item .nice-select,
+.modern-home.saas-2025 .job-search-wrap .single-field-item .nice-select .current {
+  color: #111827 !important;
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item input,
+.modern-home.saas-2025 .job-search-wrap .single-field-item .nice-select {
+  background: #ffffff !important;
+  -webkit-text-fill-color: #111827 !important;
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item input::placeholder {
+  color: #6b7280 !important;
+}
+
+.modern-home.saas-2025 .job-search-wrap .single-field-item i,
+.modern-home.saas-2025 .job-search-wrap .single-field-item .btn-action-location,
+.modern-home.saas-2025 .job-search-wrap .single-field-item .btn-action-location i,
+.modern-home.saas-2025 .job-search-wrap .single-field-item .nice-select::after {
+  color: #6b7280 !important;
+  border-color: rgba(203, 213, 225, 0.9) !important;
 }
