@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/vendor/helper.css">
     <link rel="stylesheet" href="assets/css/plugins/plugins.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dijit-auth.css">
     <!-- Modernizr JS -->
     <script src="assets/js/vendor/modernizr-3.10.0.min.js"></script>
 </head>
@@ -393,59 +394,33 @@
                                     </div>
                                 </div>
 
-                                <div class="job-search-wrap mt-150 mt-md-120 mt-sm-80 mt-xs-30">
-                                    <div class="job-search-form">
+                                <div class="job-search-wrap mt-100 mt-md-80 mt-sm-60 mt-xs-30">
+                                    <div class="job-search-form modern-hero-search-bar">
                                         <form action="index.html#">
-                                            <div class="row row-5">
-                                                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                                    <!-- Single Field Item Start  -->
-                                                    <div class="single-field-item">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                        <input placeholder="What jobs you want?" name="keyword" type="text">
-                                                    </div>
-                                                    <!-- Single Field Item End  -->
+                                            <div class="search-bar-inner">
+                                                <div class="search-field keyword-field">
+                                                    <i class="lnr lnr-magnifier"></i>
+                                                    <input placeholder="What jobs you want?" name="keyword" type="text">
                                                 </div>
-                                                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                                                    <!-- Single Field Item Start  -->
-                                                    <div class="single-field-item">
-                                                        <i class="lnr lnr-list"></i>
-                                                        <select class="nice-select wide">
-                                                            <option value="1">All categories</option>
-                                                            <option value="2">Accounting</option>
-                                                            <option value="3">Broadcasting</option>
-                                                            <option value="4">Customer Service</option>
-                                                            <option value="5">Digital Marketing</option>
-                                                            <option value="6">Finance & Accounting</option>
-                                                            <option value="7">Game Mobile</option>
-                                                            <option value="8">Graphics & Design</option>
-                                                            <option value="9">Human Resources</option>
-                                                            <option value="10">Medical Doctor</option>
-                                                            <option value="11">Restaurant</option>
-                                                            <option value="12">Sale & Marketing</option>
-                                                            <option value="13">Sale Assistance</option>
-                                                            <option value="14">Science & Analitycs</option>
-                                                            <option value="15">Teachers</option>
-                                                            <option value="16">Web & Software Dev</option>
-                                                            <option value="17">Writing & Translations</option>
-                                                        </select>
-                                                    </div>
-                                                    <!-- Single Field Item End  -->
+                                                
+                                                <div class="search-divider"></div>
+                                                
+                                                <div class="search-field category-field" data-bs-toggle="modal" data-bs-target="#categoryModal" style="cursor: pointer;">
+                                                    <i class="lnr lnr-list"></i>
+                                                    <span class="selected-category-text" id="selected-category">All categories</span>
+                                                    <i class="lnr lnr-chevron-down ms-auto dropdown-icon" style="font-size: 0.7rem; color: #94a3b8;"></i>
+                                                    <input type="hidden" name="category" id="category-input" value="1">
                                                 </div>
-                                                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                                                    <!-- Single Field Item Start  -->
-                                                    <div class="single-field-item">
-                                                        <i class="lnr lnr-map-marker"></i>
-                                                        <input class="input-field input-field-location" placeholder="Location" name="location" type="text">
-                                                        <span class="btn-action-location">
-                                                            <i class="far fa-dot-circle"></i>
-                                                        </span>
-                                                    </div>
-                                                    <!-- Single Field Item End  -->
+                                                
+                                                <div class="search-divider"></div>
+                                                
+                                                <div class="search-field location-field">
+                                                    <i class="lnr lnr-map-marker"></i>
+                                                    <input class="input-field input-field-location" placeholder="Location" name="location" type="text">
                                                 </div>
-                                                <div class="col-lg-2 col-md-6 col-sm-6 col-12">
-                                                    <div class="submit-btn">
-                                                        <button class="ht-btn" type="submit"> Search</button>
-                                                    </div>
+                                                
+                                                <div class="search-submit-btn">
+                                                    <button class="modern-search-btn" type="submit">Search</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -2242,8 +2217,74 @@
 
 
 
+    <!-- Category Selection Modal -->
+    <div class="modal fade modern-glass-modal" id="categoryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content glass-morphism-card">
+                <div class="modal-header border-0 pb-0 p-4">
+                    <h3 class="modal-title fw-800">Select Category</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="text-muted mb-30">Choose a category to refine your job search.</p>
+                    <div class="category-capsule-grid">
+                        <div class="category-capsule active" data-value="1" data-text="All categories">All categories</div>
+                        <div class="category-capsule" data-value="2" data-text="Accounting">Accounting</div>
+                        <div class="category-capsule" data-value="3" data-text="Broadcasting">Broadcasting</div>
+                        <div class="category-capsule" data-value="4" data-text="Customer Service">Customer Service</div>
+                        <div class="category-capsule" data-value="5" data-text="Digital Marketing">Digital Marketing</div>
+                        <div class="category-capsule" data-value="6" data-text="Finance & Accounting">Finance & Accounting</div>
+                        <div class="category-capsule" data-value="7" data-text="Game Mobile">Game Mobile</div>
+                        <div class="category-capsule" data-value="8" data-text="Graphics & Design">Graphics & Design</div>
+                        <div class="category-capsule" data-value="9" data-text="Human Resources">Human Resources</div>
+                        <div class="category-capsule" data-value="10" data-text="Medical Doctor">Medical Doctor</div>
+                        <div class="category-capsule" data-value="11" data-text="Restaurant">Restaurant</div>
+                        <div class="category-capsule" data-value="12" data-text="Sale & Marketing">Sale & Marketing</div>
+                        <div class="category-capsule" data-value="13" data-text="Sale Assistance">Sale Assistance</div>
+                        <div class="category-capsule" data-value="14" data-text="Science & Analitycs">Science & Analitycs</div>
+                        <div class="category-capsule" data-value="15" data-text="Teachers">Teachers</div>
+                        <div class="category-capsule" data-value="16" data-text="Web & Software Dev">Web & Software Dev</div>
+                        <div class="category-capsule" data-value="17" data-text="Writing & Translations">Writing & Translations</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const capsules = document.querySelectorAll('.category-capsule');
+        const selectedText = document.getElementById('selected-category');
+        const categoryInput = document.getElementById('category-input');
+        const modalElement = document.getElementById('categoryModal');
+        
+        if (modalElement) {
+            capsules.forEach(capsule => {
+                capsule.addEventListener('click', function() {
+                    // Remove active class from all
+                    capsules.forEach(c => c.classList.remove('active'));
+                    // Add to current
+                    this.classList.add('active');
+                    
+                    // Update UI
+                    const text = this.getAttribute('data-text');
+                    const value = this.getAttribute('data-value');
+                    
+                    if (selectedText) selectedText.textContent = text;
+                    if (categoryInput) categoryInput.value = value;
+                    
+                    // Close modal using Bootstrap API
+                    const modalInstance = bootstrap.Modal.getOrCreateInstance(modalElement);
+                    if (modalInstance) {
+                        setTimeout(() => {
+                            modalInstance.hide();
+                        }, 200);
+                    }
+                });
+            });
+        }
+    });
+    </script>
 </body>
-
-
 
 </html>
