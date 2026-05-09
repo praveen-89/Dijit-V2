@@ -1,5 +1,3 @@
-
-
 /*----------------------------------------*/
 /*  GLOBAL CARD DESIGN SYSTEM             */
 /*  Modern SaaS-style Card-Based UI       */
@@ -273,6 +271,7 @@
     display: none;
   }
 }
+
 /*-----------------------------------------------------------------------------------
 
     Template Name: Jetapo - Job Board Bootstrap 5 Template
@@ -424,7 +423,7 @@ h6 {
   padding-bottom: 16px !important;
 }
 
-.modern-home.saas-2025 .feature-section .row > [class*="col-"] {
+.modern-home.saas-2025 .feature-section .row>[class*="col-"] {
   display: flex;
 }
 
@@ -548,7 +547,7 @@ h6 {
   background: var(--saas-primary);
 }
 
-.modern-home.saas-2025 .section-title > span {
+.modern-home.saas-2025 .section-title>span {
   display: inline-block !important;
   margin-bottom: 6px !important;
   color: var(--saas-primary) !important;
@@ -617,7 +616,7 @@ h6 {
   }
 }
 
- 
+
 .modern-home.saas-2025 .hero-item::before {
   display: none !important;
   background: none !important;
@@ -661,11 +660,12 @@ h6 {
 }
 
 /* Hero subtitle: white with 50% opacity (targets the paragraph immediately after the H2) */
-.modern-home.saas-2025 .hero-copy h2 + p {
-  color: rgba(255,255,255,0.5) !important;
+.modern-home.saas-2025 .hero-copy h2+p {
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
 @media only screen and (max-width: 991px) {
+
   .modern-home.saas-2025 .hero-content-2,
   .modern-home.saas-2025 .hero-content-2.left {
     text-align: center !important;
@@ -4700,7 +4700,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
   margin-right: 5px;
   vertical-align: middle;
 }
- 
+
 .about-content .text-bold {
   font-size: 16px;
   color: #000;
@@ -4778,7 +4778,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
     margin-bottom: 20px;
   }
 }
- 
+
 .single-feature {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15672,20 +15672,21 @@ body.template-color-1 select {
 }
 
 /* Header Text Contrast */
-body.template-color-1 .main-menu > ul > li > a {
+body.template-color-1 .main-menu>ul>li>a {
   color: #333 !important;
 }
 
-body.template-color-1 .header-absolute .main-menu > ul > li > a {
-  color: #fff !important; /* Keep white on hero image */
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+body.template-color-1 .header-absolute .main-menu>ul>li>a {
+  color: #fff !important;
+  /* Keep white on hero image */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-body.template-color-1 .header-sticky.is-sticky .main-menu > ul > li > a {
+body.template-color-1 .header-sticky.is-sticky .main-menu>ul>li>a {
   color: var(--text-navy) !important;
 }
 
-body.template-color-1 .main-menu > ul > li > a:hover,
+body.template-color-1 .main-menu>ul>li>a:hover,
 body.template-color-1 .sub-menu li a:hover {
   color: var(--primary-purple) !important;
 }
@@ -15771,8 +15772,9 @@ body.template-color-1 .hero-section {
 }
 
 body.template-color-1 .trusted-text {
-  color: #fff !important; /* Tagline on hero image usually needs to be white */
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  color: #fff !important;
+  /* Tagline on hero image usually needs to be white */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Sticky Header */
@@ -15802,6 +15804,7 @@ body.template-color-1 .single-job.style-two:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08) !important;
 }
+
 /* Mobile Navbar Fixes */
 body.template-color-1 .header-mobile .icon-list li a i {
   color: #ffffff !important;
@@ -15824,6 +15827,7 @@ body.template-color-1 .header-mobile {
   background-color: var(--primary-purple) !important;
   padding: 10px 0;
 }
+
 /*----------------------------------------*/
 /*  Modern Home Visual Refresh (Index)    */
 /*----------------------------------------*/
@@ -15863,7 +15867,7 @@ body.template-color-1 .header-mobile {
   line-height: 1.2;
 }
 
-.modern-home .section-title > span {
+.modern-home .section-title>span {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.14em;
@@ -15883,14 +15887,14 @@ body.template-color-1 .header-mobile {
   margin: 0 20px;
 }
 
-.modern-home .main-menu > ul > li > a {
+.modern-home .main-menu>ul>li>a {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
 }
 
-.modern-home .main-menu > ul > li > a:hover,
-.modern-home .main-menu > ul > li.active > a {
+.modern-home .main-menu>ul>li>a:hover,
+.modern-home .main-menu>ul>li.active>a {
   color: rgba(255, 255, 255, 0.92);
 }
 
@@ -16270,7 +16274,7 @@ body.template-color-1 .header-mobile {
   box-shadow: 0 8px 24px rgba(18, 30, 68, 0.08);
 }
 
-.modern-home .main-menu > ul > li > a {
+.modern-home .main-menu>ul>li>a {
   font-size: 13px;
   color: #30374a;
 }
@@ -16556,7 +16560,7 @@ body.template-color-1 .header-mobile {
   margin-bottom: 28px !important;
 }
 
-.modern-home.saas-2025 .section-title > span {
+.modern-home.saas-2025 .section-title>span {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 12px;
@@ -16584,7 +16588,7 @@ body.template-color-1 .header-mobile {
   backdrop-filter: blur(8px);
 }
 
-.modern-home.saas-2025 .main-menu > ul > li > a {
+.modern-home.saas-2025 .main-menu>ul>li>a {
   color: var(--saas-text);
   font-weight: 500;
   font-size: 14px;
@@ -16639,7 +16643,7 @@ body.template-color-1 .header-mobile {
   margin: 0 auto 14px;
 }
 
-.modern-home.saas-2025 .hero-content-2 > p {
+.modern-home.saas-2025 .hero-content-2>p {
   color: rgba(255, 255, 255, 0.86);
   max-width: 700px;
   margin: 0 auto;
@@ -16758,7 +16762,7 @@ body.template-color-1 .header-mobile {
   border: 0;
 }
 
-.modern-home.saas-2025 .row-five-column > [class*="col-"] {
+.modern-home.saas-2025 .row-five-column>[class*="col-"] {
   max-width: 100%;
   width: 100%;
   flex: 0 0 100%;
@@ -16819,7 +16823,7 @@ body.template-color-1 .header-mobile {
   margin-bottom: 22px !important;
 }
 
-.modern-home.saas-2025 .featured-employer .section-title > span {
+.modern-home.saas-2025 .featured-employer .section-title>span {
   display: inline-block;
   margin-bottom: 6px;
   color: var(--saas-primary);
@@ -17134,7 +17138,7 @@ body.template-color-1 .header-mobile {
     line-height: 1.2;
   }
 
-  .modern-home.saas-2025 .hero-content-2 > p {
+  .modern-home.saas-2025 .hero-content-2>p {
     font-size: 14px;
   }
 
@@ -17304,7 +17308,7 @@ body.template-color-1 .header-mobile {
   flex-wrap: wrap;
 }
 
-.modern-home.saas-2025 .single-job .job-meta > div {
+.modern-home.saas-2025 .single-job .job-meta>div {
   color: var(--saas-text-muted);
 }
 
@@ -17407,7 +17411,7 @@ body.template-color-1 .header-mobile {
   margin-bottom: 22px !important;
 }
 
-.modern-home.saas-2025 .section-title > span {
+.modern-home.saas-2025 .section-title>span {
   display: inline-block;
   margin-bottom: 6px;
   color: var(--saas-primary);
@@ -17463,10 +17467,10 @@ body.template-color-1 .header-mobile {
   background: var(--saas-primary);
 }
 
-.modern-home.saas-2025 .featured-employer .section-title > span,
-.modern-home.saas-2025 .job-location .section-title > span,
-.modern-home.saas-2025 .blog-section .section-title > span,
-.modern-home.saas-2025 .testimonial-section .section-title > span {
+.modern-home.saas-2025 .featured-employer .section-title>span,
+.modern-home.saas-2025 .job-location .section-title>span,
+.modern-home.saas-2025 .blog-section .section-title>span,
+.modern-home.saas-2025 .testimonial-section .section-title>span {
   display: inline-block;
   margin-bottom: 6px;
   color: var(--saas-primary) !important;
@@ -17504,18 +17508,18 @@ body.template-color-1 .header-mobile {
 .modern-home.saas-2025 .footer-widget p,
 .modern-home.saas-2025 .footer-list li a,
 .modern-home.saas-2025 .copyright p,
-.modern-home.saas-2025 .section-title > span,
+.modern-home.saas-2025 .section-title>span,
 .modern-home.saas-2025 .dijitprogram-link a,
 .modern-home.saas-2025 .trending-keywords .title,
 .modern-home.saas-2025 .trending-keywords a,
-.modern-home.saas-2025 .single-job .job-meta > div,
+.modern-home.saas-2025 .single-job .job-meta>div,
 .modern-home.saas-2025 .single-blog .meta li,
 .modern-home.saas-2025 .single-blog .desc,
 .modern-home.saas-2025 .single-testimonial p {
   font-size: 13px;
 }
 
-.modern-home.saas-2025 .main-menu > ul > li > a,
+.modern-home.saas-2025 .main-menu>ul>li>a,
 .modern-home.saas-2025 .jp-author.item a,
 .modern-home.saas-2025 .jp-author-action.item a,
 .modern-home.saas-2025 .hero-action-btns .ht-btn,
@@ -17618,7 +17622,7 @@ body.template-color-1 .header-mobile {
   width: 100%;
 }
 
-.modern-home.saas-2025 .header-absolute .main-header > .container-fluid {
+.modern-home.saas-2025 .header-absolute .main-header>.container-fluid {
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -17636,26 +17640,26 @@ body.template-color-1 .header-mobile {
   justify-content: center;
 }
 
-.modern-home.saas-2025 .main-menu > ul {
+.modern-home.saas-2025 .main-menu>ul {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
 }
 
-.modern-home.saas-2025 .main-menu > ul > li {
+.modern-home.saas-2025 .main-menu>ul>li {
   margin: 0;
 }
 
-.modern-home.saas-2025 .main-menu > ul > li > a {
+.modern-home.saas-2025 .main-menu>ul>li>a {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
   padding: 0;
 }
 
-.modern-home.saas-2025 .main-menu > ul > li > a .label-status,
-.modern-home.saas-2025 .main-menu > ul > li > a .icon-arrow {
+.modern-home.saas-2025 .main-menu>ul>li>a .label-status,
+.modern-home.saas-2025 .main-menu>ul>li>a .icon-arrow {
   display: none;
 }
 
@@ -17720,7 +17724,7 @@ body.template-color-1 .header-mobile {
   color: #ffffff;
 }
 
-.modern-home.saas-2025 .hero-content-2 > p {
+.modern-home.saas-2025 .hero-content-2>p {
   max-width: 620px;
   margin: 0 auto;
   font-size: 16px;
@@ -17749,12 +17753,12 @@ body.template-color-1 .header-mobile {
   gap: 0;
 }
 
-.modern-home.saas-2025 .job-search-form form .row-5 > div {
+.modern-home.saas-2025 .job-search-form form .row-5>div {
   flex: 1 1 0;
   max-width: none;
 }
 
-.modern-home.saas-2025 .job-search-form form .row-5 > div:not(:last-child) .single-field-item {
+.modern-home.saas-2025 .job-search-form form .row-5>div:not(:last-child) .single-field-item {
   border-right: 1px solid var(--saas-border);
   border-radius: 0;
 }
@@ -17823,7 +17827,7 @@ body.template-color-1 .header-mobile {
     height: auto;
   }
 
-  .modern-home.saas-2025 .header-absolute .main-header > .container-fluid {
+  .modern-home.saas-2025 .header-absolute .main-header>.container-fluid {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -17840,23 +17844,23 @@ body.template-color-1 .header-mobile {
     flex-wrap: wrap;
   }
 
-  .modern-home.saas-2025 .job-search-form form .row-5 > div {
+  .modern-home.saas-2025 .job-search-form form .row-5>div {
     flex: 1 1 100%;
   }
 
-  .modern-home.saas-2025 .job-search-form form .row-5 > div:not(:last-child) .single-field-item {
+  .modern-home.saas-2025 .job-search-form form .row-5>div:not(:last-child) .single-field-item {
     border-right: 0;
     border-bottom: 1px solid var(--saas-border);
     border-radius: 0;
   }
 
-  .modern-home.saas-2025 .job-search-form form .row-5 > div:first-child .single-field-item {
+  .modern-home.saas-2025 .job-search-form form .row-5>div:first-child .single-field-item {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 0;
   }
 
-  .modern-home.saas-2025 .job-search-form form .row-5 > div:last-child .submit-btn .ht-btn {
+  .modern-home.saas-2025 .job-search-form form .row-5>div:last-child .submit-btn .ht-btn {
     border-top-right-radius: 0;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -17876,7 +17880,7 @@ body.template-color-1 .header-mobile {
     font-size: 30px;
   }
 
-  .modern-home.saas-2025 .hero-content-2 > p {
+  .modern-home.saas-2025 .hero-content-2>p {
     font-size: 14px;
   }
 
@@ -17885,8 +17889,8 @@ body.template-color-1 .header-mobile {
     margin-top: 26px;
   }
 
-  .modern-home.saas-2025 .job-search-form form .row-5 > div:first-child .single-field-item,
-  .modern-home.saas-2025 .job-search-form form .row-5 > div:last-child .submit-btn .ht-btn {
+  .modern-home.saas-2025 .job-search-form form .row-5>div:first-child .single-field-item,
+  .modern-home.saas-2025 .job-search-form form .row-5>div:last-child .submit-btn .ht-btn {
     border-radius: 12px;
   }
 
@@ -17976,12 +17980,12 @@ body.template-color-1 .header-mobile {
   width: 100% !important;
 }
 
-.modern-home.saas-2025 .header-sticky.is-sticky .main-header > .container-fluid {
+.modern-home.saas-2025 .header-sticky.is-sticky .main-header>.container-fluid {
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.modern-home.saas-2025 .header-sticky.is-sticky .main-menu > ul > li > a {
+.modern-home.saas-2025 .header-sticky.is-sticky .main-menu>ul>li>a {
   color: #ffffff !important;
 }
 
@@ -17990,7 +17994,7 @@ body.template-color-1 .header-mobile {
   color: #ffffff !important;
 }
 
-.modern-home.saas-2025 .main-menu > ul > li > a,
+.modern-home.saas-2025 .main-menu>ul>li>a,
 .modern-home.saas-2025 .jp-author.item a,
 .modern-home.saas-2025 .jp-author.item a i,
 .modern-home.saas-2025 .jp-author.item a span {
@@ -17998,7 +18002,7 @@ body.template-color-1 .header-mobile {
 }
 
 /* Ensure nav menu displays properly on homepage */
-.modern-home.saas-2025 .header-absolute .main-header > .container-fluid {
+.modern-home.saas-2025 .header-absolute .main-header>.container-fluid {
   width: 100% !important;
   display: flex !important;
   align-items: center !important;
@@ -18011,12 +18015,12 @@ body.template-color-1 .header-mobile {
 }
 
 .modern-home.saas-2025 .hero-content-2 .title,
-.modern-home.saas-2025 .hero-content-2 > p,
+.modern-home.saas-2025 .hero-content-2>p,
 .modern-home.saas-2025 .trusted-text {
   color: #ffffff !important;
 }
 
-.modern-home.saas-2025 .hero-content-2 > p {
+.modern-home.saas-2025 .hero-content-2>p {
   color: rgba(255, 255, 255, 0.72) !important;
   font-weight: 400 !important;
 }

@@ -1,0 +1,399 @@
+/* 
+ * DIJIT PROGRAM - Authentication Custom Styles
+ * Modern Glassmorphism Design System
+ */
+
+:root {
+    --primary-indigo: #6366F1;
+    --primary-purple: #8B5CF6;
+    --accent-blue: #3B82F6;
+    --accent-cyan: #06B6D4;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.4);
+    --soft-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.08);
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+}
+
+/* Auth Hero Section (Breadcrumb replacement style) */
+.auth-hero-section {
+    background: linear-gradient(135deg, #f1f5f9 0%, #f8fafc 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 60px 0 50px;
+    text-align: center;
+}
+
+.auth-hero-section::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+    top: -250px;
+    left: -100px;
+    z-index: 0;
+}
+
+.auth-hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.auth-hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--text-main);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+}
+
+.auth-hero-section p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Main Auth Section */
+.auth-main-wrapper {
+    background: #f8fafc;
+    padding-bottom: 100px;
+    margin-top: -40px;
+}
+
+.glass-auth-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 32px;
+    box-shadow: var(--soft-shadow);
+    padding: 50px;
+    transition: all 0.4s ease;
+}
+
+@media (max-width: 767px) {
+    .glass-auth-card {
+        padding: 30px 20px;
+    }
+}
+
+/* Tab Navigation */
+.modern-pill-tabs .nav-pills {
+    background: #f1f5f9;
+    padding: 6px;
+    border-radius: 50px;
+    display: inline-flex;
+    margin-bottom: 35px;
+}
+
+.modern-pill-tabs .nav-link {
+    border-radius: 50px;
+    padding: 12px 35px;
+    font-weight: 700;
+    color: var(--text-muted);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    font-size: 0.95rem;
+}
+
+.modern-pill-tabs .nav-link.active {
+    background: var(--primary-indigo);
+    color: #fff !important;
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+}
+
+/* Forms */
+.modern-input-wrapper {
+    margin-bottom: 25px;
+}
+
+.modern-input-wrapper label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-main);
+    font-size: 0.9rem;
+}
+
+.modern-input-wrapper input {
+    width: 100%;
+    height: 56px;
+    background: #fff;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 0 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.modern-input-wrapper input:focus {
+    border-color: var(--primary-indigo);
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+    outline: none;
+}
+
+/* Role Selection */
+.role-selection-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.role-radio-card {
+    flex: 1;
+    position: relative;
+}
+
+.role-radio-card input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.role-radio-card label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #fff;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0;
+}
+
+.role-radio-card label i {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: var(--text-muted);
+}
+
+.role-radio-card label span {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-muted);
+}
+
+.role-radio-card input:checked + label {
+    border-color: var(--primary-indigo);
+    background: rgba(99, 102, 241, 0.05);
+}
+
+.role-radio-card input:checked + label i,
+.role-radio-card input:checked + label span {
+    color: var(--primary-indigo);
+}
+
+/* Primary Button */
+.modern-btn-primary {
+    background: linear-gradient(135deg, var(--primary-indigo) 0%, var(--primary-purple) 100%);
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.modern-btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(99, 102, 241, 0.35);
+    filter: brightness(1.1);
+    color: #fff;
+}
+
+/* Social Login */
+.social-login-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-login-section .divider-text {
+    position: relative;
+    margin-bottom: 25px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.social-login-section .divider-text::before,
+.social-login-section .divider-text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background: #e2e8f0;
+}
+
+.social-login-section .divider-text::before { left: 0; }
+.social-login-section .divider-text::after { right: 0; }
+
+.social-btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1.5px solid #e2e8f0;
+    color: var(--text-main);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+    transform: translateY(-2px);
+    color: var(--primary-indigo);
+}
+
+/* Right Side Trust Section */
+.auth-trust-side {
+    padding-left: 50px;
+}
+
+@media (max-width: 991px) {
+    .auth-trust-side {
+        padding-left: 0;
+        margin-top: 60px;
+    }
+}
+
+.auth-trust-side h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+}
+
+.auth-trust-side p.desc {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+}
+
+.benefit-list {
+    margin-bottom: 3rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.benefit-item i {
+    width: 28px;
+    height: 28px;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--primary-indigo);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+.benefit-item span {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 2.5rem;
+}
+
+.stat-box {
+    background: #fff;
+    padding: 20px 10px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.stat-box h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--primary-indigo);
+    margin-bottom: 4px;
+}
+
+.stat-box p {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.cta-highlight-banner {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
+    border: 1.5px dashed var(--primary-indigo);
+    border-radius: 24px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta-highlight-banner i {
+    font-size: 1.8rem;
+    color: var(--primary-indigo);
+}
+
+.cta-highlight-banner p {
+    margin: 0;
+    font-weight: 700;
+    color: var(--text-main);
+    line-height: 1.4;
+}
+
+/* Quick View Modal Modernization */
+.quick-view-modal-container .modal-content {
+    border-radius: 32px;
+    border: none;
+    overflow: hidden;
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+}
+
+.quick-view-modal-container .modal-header {
+    border: none;
+    padding: 20px 30px 0;
+}
+
+.quick-view-modal-container .modal-body {
+    padding: 0 40px 50px;
+}
+
+.quick-view-modal-container .login-register-form-area {
+    padding: 0;
+    border: none;
+}
