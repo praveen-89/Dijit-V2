@@ -720,4 +720,125 @@
     text-overflow: ellipsis;
 }
 
+/* Capsule Buttons in Hero */
+.hero-capsule-btns {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.capsule-btn {
+    padding: 14px 34px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+}
+
+.primary-capsule {
+    background: linear-gradient(135deg, var(--primary-indigo) 0%, var(--primary-purple) 100%);
+    color: #fff !important;
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.35);
+    border: none;
+}
+
+.primary-capsule:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(99, 102, 241, 0.45);
+}
+
+.glass-capsule {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.glass-capsule:hover {
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 575px) {
+    .capsule-btn {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+}
+
+
+/* Why DIJIT & Platform Overview Styles */
+.why-dijit-section {
+    background: #ffffff;
+}
+
+.dijit-check-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.dijit-check-list li {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: var(--text-main);
+    font-size: 0.95rem;
+}
+
+.dijit-check-list li i {
+    color: var(--primary-indigo);
+    font-size: 1.2rem;
+    margin-right: 12px;
+}
+
+.bg-gray {
+    background: #f8fafc;
+}
+
+.platform-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+}
+
+.platform-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.1);
+    border-color: var(--primary-indigo);
+}
+
+.card-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .dijit-check-list {
+        grid-template-columns: 1fr;
+    }
+    .platform-card {
+        padding: 30px !important;
+    }
+}
+
+
 
