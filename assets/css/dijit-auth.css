@@ -770,8 +770,47 @@
     .capsule-btn {
         width: 100%;
         margin-right: 0 !important;
+        padding: 12px 20px;
+        font-size: 0.9rem;
     }
 }
+
+/* Hero Section Mobile Refinements */
+@media (max-width: 991px) {
+    .hero-content-2.left {
+        text-align: center !important;
+    }
+    .hero-capsule-btns {
+        justify-content: center;
+    }
+    .hero-copy .trusted-text {
+        margin: 0 auto 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-capsule-btns {
+        margin-top: 40px !important; /* Overriding mt-80 */
+    }
+    .job-search-wrap {
+        margin-top: 30px !important; /* Overriding mt-25 */
+    }
+    .hero-content-2 h2 {
+        font-size: 36px !important;
+        line-height: 44px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content-2 h2 {
+        font-size: 28px !important;
+        line-height: 36px !important;
+    }
+    .hero-copy br {
+        display: none;
+    }
+}
+
 
 
 /* Why DIJIT & Platform Overview Styles */
