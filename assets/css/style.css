@@ -1,8 +1,4 @@
-/*----------------------------------------*/
-/*  GLOBAL CARD DESIGN SYSTEM             */
-/*  Modern SaaS-style Card-Based UI       */
-/*----------------------------------------*/
-
+ 
 :root {
   --card-bg: #FFFFFF;
   --card-border: #E2E8F0;
@@ -16,8 +12,7 @@
   --card-text-secondary: #64748B;
 }
 
-/* Base Card Component */
-.card-system,
+ .card-system,
 .modern-card {
   background: var(--card-bg);
   border: var(--card-border-width) solid var(--card-border);
@@ -272,62 +267,7 @@
   }
 }
 
-/*-----------------------------------------------------------------------------------
-
-    Template Name: Jetapo - Job Board Bootstrap 5 Template
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
-    CSS INDEX
-    ===================
-
-    01. Theme default CSS
-    02. Color Variation CSS
-    03. Mixin CSS
-    04. Header CSS
-    05. Mobile Menu CSS
-    06. Hero CSS
-    07. About CSS
-    08. Feature CSS
-    09. Job Search CSS
-    10. Job Location CSS
-    11. Job CSS
-    12. Categories CSS
-    13. Employer CSS
-    14. Candidate CSS
-    15. Fun Fact CSS
-    16. Work CSS
-    17. Video CSS
-    18. Testimonial CSS
-    19. Team CSS
-    20. Service CSS
-    21. Banner CSS
-    22. Faq CSS
-    23. Keyword CSS
-    24. Login Register CSS
-    25. Skill CSS
-    26. Recruit CSS
-    27. Pricing CSS
-    28. Company History CSS
-    29. Brand CSS
-    30. Product CSS
-    31. Cart CSS
-    32. Checkout CSS
-    33. Blog CSS
-    34. CTA CSS
-    35. Comment CSS
-    36. Sidebar CSS
-    37. Contact CSS
-    38. Footer CSS
-    39. 404 CSS
-    40. Modal CSS
-
------------------------------------------------------------------------------------*/
-/*----------------------------------------*/
-/*  01. Theme default CSS
-/*----------------------------------------*/
-/*-- Google Font --*/
+ 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 :root {
@@ -522,8 +462,7 @@ h6 {
   align-items: center;
 }
 
-/* Final authority overrides for restored SaaS headings and company cards */
-.modern-home.saas-2025 .section-title-wrap {
+ .modern-home.saas-2025 .section-title-wrap {
   display: flex !important;
   align-items: flex-end !important;
   justify-content: space-between !important;
@@ -1312,9 +1251,7 @@ img {
   background: var(--primary-purple);
 }
 
-/*-- 
-    - Input Placeholder
------------------------------------------*/
+ 
 input:-moz-placeholder,
 textarea:-moz-placeholder {
   opacity: 1;
@@ -1339,8 +1276,7 @@ textarea:-ms-input-placeholder {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-/* This color is default color. It will change depending your body template color class like .template-color-1 to 4  */
-body.template-color-1 .text-color {
+ body.template-color-1 .text-color {
   color: var(--primary-purple);
 }
 
@@ -1356,9 +1292,7 @@ body.template-color-4 .text-color {
   color: #ff5d3c;
 }
 
-/*-- 
-    - Tab Content & Pane Fix
-------------------------------------------*/
+ 
 .tab-content {
   width: 100%;
 }
@@ -1379,12 +1313,7 @@ body.template-color-4 .text-color {
   overflow: visible;
 }
 
-/*-- 
-    - Main Wrapper
-------------------------------------------*/
-/*-- 
-    - Section Title
-------------------------------------------*/
+ 
 .section-title-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1764,11 +1693,7 @@ a.ht-btn:hover,
 button.ht-btn:hover {
   opacity: 0.9;
 }
-
-/*-- 
-    - Page Banner Section
-------------------------------------------*/
-/*-- Page Banner --*/
+ 
 .page-banner h2 {
   font-size: 80px;
   line-height: 110px;
@@ -1906,12 +1831,7 @@ button.ht-btn:hover {
   color: #ffffff;
 }
 
-/* -----------------
-    Instafeed css
----------------------*/
-/*-- 
-    - Page Pagination
-------------------------------------------*/
+ 
 .page-pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3838,7 +3758,7 @@ body.template-color-1 .header-absolute .logo a {
 
 /* Mobile Menu Header */
 .header-mobile-navigation {
-  padding: 20px 0;
+  padding: 12px 0;
 }
 
 .header-logo img {
@@ -3938,6 +3858,7 @@ body.template-color-1 .header-mobile .header-logo a {
 
 .bottom-navbar-mobile .list-actions li a span i {
   font-size: 22px;
+  color: #ffffff;
 }
 
 .bottom-navbar-mobile .list-actions li a span.text {
@@ -3950,6 +3871,7 @@ body.template-color-1 .header-mobile .header-logo a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+    color: #ffffff;
 }
 
 .bottom-navbar-mobile .list-actions li a.active::before {
@@ -3962,9 +3884,13 @@ body.template-color-1 .header-mobile .header-logo a {
   background: rgba(0, 0, 0, 0.25);
 }
 
-/*----------------------------------------*/
-/*  05. Mobile Menu CSS
-/*----------------------------------------*/
+ .bottom-navbar-mobile .list-actions li a,
+.bottom-navbar-mobile .list-actions li a span,
+.bottom-navbar-mobile .list-actions li a span i,
+.bottom-navbar-mobile .list-actions li a span.text {
+  color: #ffffff !important;
+}
+ 
 .popup-mobile-menu-wrapper .popup-mobile-manu {
   visibility: visible;
   opacity: 1;
@@ -5202,9 +5128,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
   cursor: pointer;
 }
 
-/*----------------------------------------*/
-/*  10. Job Location CSS
-/*----------------------------------------*/
+ 
 .single-job-location {
   height: 370px;
   width: 100%;
@@ -5262,9 +5186,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
   color: #ffffff;
 }
 
-/*----------------------------------------*/
-/*  11. Job CSS
-/*----------------------------------------*/
+ 
 .job-section .container .row .col-lg-12 {
   margin: -0.5px 0;
 }
@@ -6785,6 +6707,44 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
     max-height: 210px;
   }
 }
+  
+  @media only screen and (max-width: 991px) {
+    .featured-employer .row.row-five-column,
+    .featured-employer .employer-slider,
+    .tab-content > .row,
+    .blog-wrapper .row {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x proximity;
+      gap: 14px;
+      padding-bottom: 12px;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+
+    .featured-employer .row.row-five-column > [class*="col-"],
+    .featured-employer .employer-slider .employer-item,
+    .tab-content > .row > [class*="col-"],
+    .blog-wrapper .single-blog-post {
+      flex: 0 0 85%;
+      max-width: 420px;
+      scroll-snap-align: start;
+      box-sizing: border-box;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    /* Ensure images and cards don't shrink undesirably */
+    .featured-employer .employer-item img,
+    .single-job .job-image img,
+    .blog-wrapper .single-blog-post img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
 
 .bottom-section-filter {
   position: relative;
