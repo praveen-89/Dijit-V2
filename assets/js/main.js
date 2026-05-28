@@ -9,7 +9,6 @@ var windows = $(window);
     Menu Sticky
 -----------------------------------*/
 var sticky = $('.header-sticky');
-
 windows.on('scroll', function() {
     var scroll = windows.scrollTop();
     if (scroll < 300) {
@@ -846,4 +845,17 @@ function mailChimpResponse(resp) {
     
 
   
-})(jQuery);	
+})(jQuery);
+
+/* Initialize stack-scroll (vanilla script) if present */
+(function () {
+    if (typeof window === 'undefined') return;
+    function loadStackScroll() {
+        var script = document.createElement('script');
+        script.src = 'assets/js/stack-scroll.js';
+        script.defer = true;
+        document.body.appendChild(script);
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', loadStackScroll);
+    else loadStackScroll();
+})();

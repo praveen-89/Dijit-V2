@@ -548,7 +548,59 @@
         <!-- Platform Overview Section End -->
 
         <!-- Featured Employer Start -->
-        <div class="featured-employer section pt-115 pt-lg-95 pt-md-75 pt-sm-55 pt-xs-45">
+        <style>
+        @media only screen and (max-width: 768px) {
+            /* Mobile-only stacked spotlight cards */
+            .featured-employer.mobile-spotlight-stack .row.row-five-column {
+                display: block;
+                overflow: visible;
+                margin-left: 0;
+                margin-right: 0;
+                padding-bottom: 48px;
+            }
+
+            .featured-employer.mobile-spotlight-stack .row.row-five-column > [class*="col-"] {
+                position: sticky;
+                top: 70px;
+                width: 100%;
+                max-width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+                margin-bottom: 18px;
+                transform-origin: center top;
+                transition: transform 0.35s ease, opacity 0.35s ease, box-shadow 0.35s ease;
+                z-index: 1;
+            }
+
+            .featured-employer.mobile-spotlight-stack .row.row-five-column > [class*="col-"] + [class*="col-"] {
+                margin-top: -22px;
+            }
+
+            .featured-employer.mobile-spotlight-stack .row.row-five-column > [class*="col-"] .employer-item {
+                position: relative;
+                border-radius: 18px;
+                overflow: hidden;
+                box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+                background: #ffffff;
+                will-change: transform;
+                transform: scale(var(--stack-scale, 1));
+                opacity: var(--stack-opacity, 1);
+            }
+
+            .featured-employer.mobile-spotlight-stack .row.row-five-column > [class*="col-"].is-past {
+                z-index: 2;
+            }
+
+            .featured-employer.mobile-spotlight-stack .row.row-five-column > [class*="col-"].is-active {
+                z-index: 4;
+            }
+
+            .featured-employer.mobile-spotlight-stack .row.row-five-column > [class*="col-"].is-future {
+                z-index: 3;
+            }
+        }
+        </style>
+        <div class="featured-employer section pt-115 pt-lg-95 pt-md-75 pt-sm-55 pt-xs-45 mobile-spotlight-stack">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -746,6 +798,114 @@
             </div>
         </div>
         <!-- Featured Employer End -->
+        <script>
+        (function () {
+            'use strict';
+
+            var section = document.querySelector('.featured-employer.mobile-spotlight-stack');
+            if (!section) {
+                return;
+            }
+
+            var cards = Array.prototype.slice.call(section.querySelectorAll('.row.row-five-column > [class*="col-"]'));
+            if (!cards.length) {
+                return;
+            }
+
+            var mobileQuery = window.matchMedia('(max-width: 768px)');
+            var stickyTop = 70;
+            var ticking = false;
+
+            function clearState() {
+                cards.forEach(function (card) {
+                    card.classList.remove('is-past', 'is-active', 'is-future');
+                    card.style.removeProperty('--stack-scale');
+                    card.style.removeProperty('--stack-opacity');
+                    card.style.removeProperty('z-index');
+                });
+            }
+
+            function getActiveIndex() {
+                var activeIndex = -1;
+
+                for (var index = 0; index < cards.length; index += 1) {
+                    var rect = cards[index].getBoundingClientRect();
+                    if (rect.top <= stickyTop && rect.bottom > stickyTop) {
+                        activeIndex = index;
+                        break;
+                    }
+                }
+
+                if (activeIndex !== -1) {
+                    return activeIndex;
+                }
+
+                for (var nextIndex = 0; nextIndex < cards.length; nextIndex += 1) {
+                    if (cards[nextIndex].getBoundingClientRect().top > stickyTop) {
+                        return Math.max(0, nextIndex - 1);
+                    }
+                }
+
+                return cards.length - 1;
+            }
+
+            function updateCards() {
+                ticking = false;
+
+                if (!mobileQuery.matches) {
+                    clearState();
+                    return;
+                }
+
+                var activeIndex = getActiveIndex();
+
+                cards.forEach(function (card, index) {
+                    var depth = Math.max(0, activeIndex - index);
+                    var scale = 1;
+                    var opacity = 1;
+
+                    if (index < activeIndex) {
+                        // Older cards recede slightly so the next card can overlap cleanly.
+                        scale = Math.max(0.92, 1 - (depth * 0.025));
+                        opacity = Math.max(0.78, 1 - (depth * 0.05));
+                        card.classList.add('is-past');
+                    } else if (index === activeIndex) {
+                        card.classList.add('is-active');
+                    } else {
+                        // Future cards stay just below full scale until they become active.
+                        scale = 0.985;
+                        opacity = 0.98;
+                        card.classList.add('is-future');
+                    }
+
+                    card.style.setProperty('--stack-scale', scale.toFixed(3));
+                    card.style.setProperty('--stack-opacity', opacity.toFixed(3));
+                    card.style.zIndex = String(100 - index);
+                });
+            }
+
+            function requestUpdate() {
+                if (ticking) {
+                    return;
+                }
+
+                ticking = true;
+                window.requestAnimationFrame(updateCards);
+            }
+
+            window.addEventListener('scroll', requestUpdate, { passive: true });
+            window.addEventListener('resize', requestUpdate, { passive: true });
+            window.addEventListener('orientationchange', requestUpdate, { passive: true });
+
+            if (typeof mobileQuery.addEventListener === 'function') {
+                mobileQuery.addEventListener('change', requestUpdate);
+            } else if (typeof mobileQuery.addListener === 'function') {
+                mobileQuery.addListener(requestUpdate);
+            }
+
+            requestUpdate();
+        })();
+        </script>
 
         <!-- Job Location Section Start -->
         <div class="job-location section pt-110 pt-lg-95 pt-md-75 pt-sm-55 pt-xs-45 pb-120 pb-lg-100 pb-md-80 pb-sm-60 pb-xs-50">

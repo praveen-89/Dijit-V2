@@ -870,6 +870,16 @@
     justify-content: center;
 }
 
+@media (min-width: 992px) {
+    .platform-overview-section .section-title.text-center {
+        text-align: left !important;
+    }
+
+    .platform-overview-section .section-title.text-center .title {
+        text-align: left;
+    }
+}
+
 @media (max-width: 767px) {
     .dijit-check-list {
         grid-template-columns: 1fr;
