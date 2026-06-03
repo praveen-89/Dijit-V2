@@ -18541,6 +18541,7 @@ body{
 
   padding-top:0px !important;
   margin-top: -50px !important;
+  margin-bottom: 180px !important;
   padding-bottom:0px !important;
 
   background:
@@ -18556,6 +18557,27 @@ body{
       #0b1020 100%
     ) !important;
 }
+
+@media only screen and (max-width: 767px) {
+  .modern-home.saas-2025 .why-dijit-image,
+  .modern-home.saas-2025 .modern-image-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+  }
+
+  .modern-home.saas-2025 .why-dijit-image .floating-card-img,
+  .modern-home.saas-2025 .modern-image-wrapper .floating-card-img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
 .hero-item{
 
   position:relative !important;
@@ -19181,11 +19203,33 @@ body{
 
   margin-top:0 !important;
 
-  padding-top:200px !important;
-
+  padding-top:180px !important;
+ 
   background:#f8fafc !important;
 
   border-top-left-radius:40px !important;
 
   border-top-right-radius:40px !important;
 }
+
+@media only screen and (max-width: 767px) {
+  .modern-home.saas-2025 .job-search-wrap,
+  .modern-home.saas-2025 .job-search-form,
+  .modern-home.saas-2025 .job-search-form.modern-hero-search-bar,
+  .modern-home.saas-2025 .job-search-form.modern-hero-search-bar .search-bar-inner {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .modern-home.saas-2025 .job-search-form.modern-hero-search-bar .search-field {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .modern-home.saas-2025 .trending-keywords {
+    display: none !important;
+  }
+}
+
+ 

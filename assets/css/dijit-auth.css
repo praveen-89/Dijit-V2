@@ -793,7 +793,7 @@
         margin-top: 40px !important; /* Overriding mt-80 */
     }
     .job-search-wrap {
-        margin-top: 30px !important; /* Overriding mt-25 */
+        margin-top: 18px !important; /* Pull the form slightly upward on mobile */
     }
     .hero-content-2 h2 {
         font-size: 36px !important;
@@ -884,6 +884,16 @@
     .dijit-check-list {
         grid-template-columns: 1fr;
     }
+
+    .platform-overview-section .section-title.text-center {
+        text-align: left !important;
+    }
+
+    .platform-overview-section .section-title.text-center .title,
+    .platform-overview-section .section-title.text-center p {
+        text-align: left !important;
+    }
+
     .platform-card {
         padding: 30px !important;
     }
@@ -1028,42 +1038,69 @@
 /* Beautiful refinements on mobile */
 @media (max-width: 767px) {
     .modern-home.saas-2025 .job-search-form.modern-hero-search-bar .search-bar-inner {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 12px !important;
-        padding: 16px !important;
+        display: grid !important;
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr) !important;
+        gap: 10px !important;
+        padding: 12px !important;
         background: #ffffff !important;
         border-radius: 24px !important;
-        box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1) !important;
-        border: 1px solid rgba(226, 232, 240, 0.8) !important;
+        box-shadow: none !important;
+        border: none !important;
+        overflow: hidden !important;
+    }
+
+    .modern-home.saas-2025 .job-search-form.modern-hero-search-bar .search-divider {
+        display: none !important;
     }
 
     .modern-home.saas-2025 .job-search-form.modern-hero-search-bar .search-field {
         background: #f8fafc !important;
         border: 1px solid #f1f5f9 !important;
         border-radius: 14px !important;
-        height: 52px !important;
-        padding: 0 16px !important;
+        height: 48px !important;
+        padding: 0 12px !important;
         display: flex !important;
         align-items: center !important;
         width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .modern-home.saas-2025 .job-search-form.modern-hero-search-bar .category-field {
+        grid-column: 1;
+        order: 1;
+    }
+
+    .modern-home.saas-2025 .job-search-form.modern-hero-search-bar .location-field {
+        grid-column: 2;
+        order: 2;
+    }
+
+    .modern-home.saas-2025 .job-search-form.modern-hero-search-bar .keyword-field {
+        grid-column: 1 / -1;
+        order: 3;
+    }
+
+    .modern-home.saas-2025 .job-search-form.modern-hero-search-bar .search-submit-btn {
+        grid-column: 1 / -1;
+        order: 4;
     }
 
     .modern-home.saas-2025 .job-search-form.modern-hero-search-bar .search-field input,
     .modern-home.saas-2025 .job-search-form.modern-hero-search-bar .search-field span.selected-category-text {
-        height: 50px !important;
-        line-height: 50px !important;
-        padding: 0 0 0 32px !important;
-        font-size: 14px !important;
+        height: 46px !important;
+        line-height: 46px !important;
+        padding: 0 0 0 28px !important;
+        font-size: 13px !important;
         background: transparent !important;
         border: none !important;
         font-weight: 600 !important;
         width: 100% !important;
+        min-width: 0 !important;
     }
 
     .modern-home.saas-2025 .job-search-form.modern-hero-search-bar .search-field i {
-        left: 14px !important;
-        font-size: 16px !important;
+        left: 10px !important;
+        font-size: 15px !important;
         color: #6366f1 !important;
     }
 
@@ -1073,15 +1110,22 @@
 
     .modern-home.saas-2025 .job-search-form.modern-hero-search-bar .category-field .dropdown-icon {
         position: absolute !important;
-        right: 14px !important;
+        right: 10px !important;
         left: auto !important;
         font-size: 0.8rem !important;
         color: #94a3b8 !important;
     }
 
+    .modern-home.saas-2025 .job-search-form.modern-hero-search-bar .search-field span.selected-category-text {
+        white-space: nowrap !important;
+        overflow: visible !important;
+        text-overflow: clip !important;
+        padding-right: 24px !important;
+    }
+
     .modern-home.saas-2025 .job-search-form.modern-hero-search-bar .modern-search-btn {
         width: 100% !important;
-        height: 52px !important;
+        height: 48px !important;
         border-radius: 14px !important;
         font-size: 15px !important;
         font-weight: 700 !important;
@@ -1349,7 +1393,7 @@
     display: inline-block;
     animation: subtlePulse 3s ease-in-out infinite;
 }
-}
+
 
 .dijit-talent-cloud-card .card-highlights li {
     color: #334155 !important;
@@ -1623,6 +1667,53 @@ span.sub-title.modern-subtitle:hover {
 @media (max-width: 767px) {
     .modern-check-list {
         grid-template-columns: 1fr;
+        gap: 14px 0;
+    }
+
+    .modern-check-list li {
+        padding: 6px 0;
+    }
+
+    .floating-card-img {
+        animation: none !important;
+        transform: none !important;
+    }
+
+    .why-dijit-content .section-title {
+        margin-bottom: 18px !important;
+    }
+
+    .why-dijit-content .title {
+        font-size: 28px !important;
+        line-height: 1.12 !important;
+        letter-spacing: -0.02em !important;
+        max-width: 100% !important;
+        color: #0f172a !important;
+        animation: none !important;
+        background: none !important;
+        -webkit-background-clip: initial !important;
+        background-clip: initial !important;
+    }
+
+    .why-dijit-content .lead {
+        animation: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+    .modern-home.saas-2025 .platform-overview-section .section-title .title,
+    .modern-home.saas-2025 .featured-employer .section-title .title,
+    .modern-home.saas-2025 .job-location .section-title .title,
+    .modern-home.saas-2025 .job-section .section-title .title,
+    .modern-home.saas-2025 .blog-section .section-title .title,
+    .modern-home.saas-2025 .testimonial-section .section-title .title {
+        font-size: 28px !important;
+        line-height: 1.12 !important;
+        letter-spacing: -0.02em !important;
+        font-weight: 700 !important;
+        color: #0f172a !important;
+        max-width: 100% !important;
+        white-space: normal !important;
     }
 }
 .modern-check-list li {
