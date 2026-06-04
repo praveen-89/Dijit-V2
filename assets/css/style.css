@@ -1239,25 +1239,21 @@ img {
 input:-moz-placeholder,
 textarea:-moz-placeholder {
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
  body.template-color-1 .text-color {
@@ -1465,7 +1461,7 @@ body.template-color-4 .text-color {
 @media only screen and (max-width: 767px) {
   .section-title-four h3 {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -2239,26 +2235,7 @@ blockquote.blockquote .author {
 /*---------------------------------------
     02. Color Variation CSS
 -----------------------------------------*/
-body.template-color-1 {
-  /*-- Common CSS --*/
-  /*-- 
-      - Button
-  ------------------------------------------*/
-  /*-- Main Menu --*/
-  /*-- Search Form --*/
-  /* Popup Mobile CSS */
-  /* Bottom Navbar Mobile */
-  /* Bottom Mobile Popup CSS */
-  /*-- keywords --*/
-  /*-- Single Funfact --*/
-  /*-- Single Categories --*/
-  /*-- Employer Item --*/
-  /* Single Job CSS */
-  /* Single Team CSS */
-  /* Single Blog List CSS */
-  /* Hero Content CSS */
-  /*-- Copyright --*/
-}
+
 
 body.template-color-1 .theme-color {
   color: var(--primary-purple);
@@ -2464,26 +2441,7 @@ body.template-color-1 .copyright p a:hover {
   color: var(--primary-purple);
 }
 
-body.template-color-2 {
-  /*-- Common CSS --*/
-  /*-- 
-      - Button
-  ------------------------------------------*/
-  /*-- Main Menu --*/
-  /*-- Search Form --*/
-  /* Popup Mobile CSS */
-  /* Bottom Navbar Mobile */
-  /* Bottom Mobile Popup CSS */
-  /*-- keywords --*/
-  /*-- Single Funfact --*/
-  /*-- Single Categories --*/
-  /*-- Employer Item --*/
-  /* Single Job CSS */
-  /* Single Team CSS */
-  /* Single Blog List CSS */
-  /* Hero Content CSS */
-  /*-- Copyright --*/
-}
+
 
 body.template-color-2 .theme-color {
   color: #4c53b6;
@@ -2689,26 +2647,7 @@ body.template-color-2 .copyright p a:hover {
   color: #4c53b6;
 }
 
-body.template-color-3 {
-  /*-- Common CSS --*/
-  /*-- 
-      - Button
-  ------------------------------------------*/
-  /*-- Main Menu --*/
-  /*-- Search Form --*/
-  /* Popup Mobile CSS */
-  /* Bottom Navbar Mobile */
-  /* Bottom Mobile Popup CSS */
-  /*-- keywords --*/
-  /*-- Single Funfact --*/
-  /*-- Single Categories --*/
-  /*-- Employer Item --*/
-  /* Single Job CSS */
-  /* Single Team CSS */
-  /* Single Blog List CSS */
-  /* Hero Content CSS */
-  /*-- Copyright --*/
-}
+
 
 body.template-color-3 .theme-color {
   color: #0898d5;
@@ -4548,7 +4487,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
   .hero-content-5 h2 {
     font-size: 40px;
     line-height: 54px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -4556,7 +4495,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
   .hero-content-5 h2 {
     font-size: 32px;
     line-height: 42px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -4570,7 +4509,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
 
 @media only screen and (max-width: 767px) {
   .hero-content-5 p {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -4663,7 +4602,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
   .about-video-popup .title {
     font-size: 28px;
     line-height: 38px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -5379,7 +5318,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -6146,7 +6085,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
   .job-post-content .title {
     font-size: 32px;
     line-height: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -7627,7 +7566,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -8503,7 +8442,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
     padding: 0 20px;
     text-align: center;
     border-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -8817,7 +8756,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .video-left-content .title {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -8825,7 +8764,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
   .video-left-content .title {
     font-size: 32px;
     line-height: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -9111,7 +9050,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-left-content .title {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -9119,7 +9058,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
   .testimonial-left-content .title {
     font-size: 24px;
     line-height: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -9199,7 +9138,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
   .single-testimonial-two .item-comment {
     font-size: 15px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     padding-bottom: 20px;
   }
 }
@@ -9505,7 +9444,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
 
 @media only screen and (max-width: 767px) {
   .faq-sidebar {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -9907,7 +9846,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
 
 @media only screen and (max-width: 767px) {
   .login-instruction .login-instruction-content .title {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -9984,14 +9923,14 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .skill-content {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .skill-content {
     padding-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -10006,7 +9945,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .skill-content .title {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -10014,7 +9953,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
   .skill-content .title {
     font-size: 30px;
     line-height: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -12290,7 +12229,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
 @media only screen and (max-width: 767px) {
   .post-author-info .author-image {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -12542,7 +12481,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
   .cta-content .title {
     font-size: 38px;
     line-height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -12550,7 +12489,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
   .cta-content .title {
     font-size: 30px;
     line-height: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -13436,7 +13375,7 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
 @media only screen and (max-width: 767px) {
   .job-employer-widget .image {
     margin-right: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 }
 
@@ -13561,7 +13500,6 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
 
 .remove-compare {
   float: right;
-  display: inline-block;
   padding-right: 10px;
 }
 
@@ -13569,7 +13507,6 @@ body.template-color-1 .hero-action-btns .ht-btn.transparent-btn-two:hover {
   float: left;
   height: 35px;
   line-height: 35px;
-  display: inline-block;
 }
 
 .compare-btn {
@@ -19233,3 +19170,297 @@ body{
 }
 
  
+/* Modern Platform Card Styles */
+.modern-platform-card {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+.modern-platform-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.modern-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.modern-card-img {
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: transform;
+}
+
+.modern-platform-card:hover .modern-card-img {
+    transform: scale(1.05);
+}
+
+.modern-cta-btn {
+    transition: all 0.3s ease;
+}
+
+.modern-cta-btn:hover {
+    background-color: #333 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.modern-heart-btn {
+    transition: all 0.3s ease;
+}
+
+.modern-heart-btn:hover {
+    background-color: #fef2f2;
+    border-color: #ef4444 !important;
+    transform: translateY(-2px);
+}
+
+/* --- Modernize Single Job Cards --- */
+.job-section .single-job {
+    background: #ffffff !important;
+    border-radius: 10px !important;
+    padding: 8px 10px !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04) !important;
+    border: 1px solid #f0f0f0 !important;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    display: block !important;
+    margin-bottom: 12px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.job-section .single-job:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.1) !important;
+    border-color: #6366f1 !important;
+}
+
+.job-section .single-job .info-top {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+.job-section .single-job .job-image {
+    position: absolute !important;
+    top: 15px !important;
+    right: 15px !important;
+    margin: 0 !important;
+    float: none !important;
+    transition: transform 0.35s ease !important;
+    z-index: 10;
+}
+
+.job-section .single-job:hover .job-image {
+    transform: scale(1.08) rotate(-2deg) !important;
+}
+
+.job-section .single-job .job-image img {
+    border-radius: 8px !important;
+    width: 32px !important;
+    height: 32px !important;
+    object-fit: contain !important;
+    background: #f8f9fa !important;
+    padding: 3px !important;
+    border: 1px solid #eaeaea !important;
+}
+
+.job-section .single-job .job-info {
+    float: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+    flex-grow: 1 !important;
+    padding-right: 40px !important; /* Make room for the absolute logo */
+}
+
+.job-section .single-job .job-info-inner {
+    transition: transform 0.35s ease !important;
+    /* Reduce height spacing */
+    margin-bottom: -15px !important;
+}
+
+.job-section .single-job:hover .job-info-inner {
+    transform: translateX(4px) !important;
+}
+
+.job-section .single-job .job-info-top {
+    display: flex !important;
+    justify-content: flex-start !important; /* Changed from space-between to avoid overlap */
+    align-items: flex-start !important;
+    margin-bottom: 5px !important; /* Reduced from 0 maybe? It was 0 but the title had margin */
+}
+
+.job-section .single-job .title-name {
+    order: 1;
+    margin-bottom: 5px !important;
+}
+
+.job-section .single-job .saveJob {
+    order: 2;
+    position: absolute !important;
+    bottom: 15px !important;
+    right: 15px !important;
+    float: none !important;
+}
+
+.job-section .single-job .saveJob .save-job {
+    transition: transform 0.3s ease, color 0.3s ease !important;
+}
+
+.job-section .single-job:hover .saveJob .save-job {
+    transform: scale(1.2) !important;
+    color: #ef4444 !important;
+}
+
+.job-section .single-job .job-title {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    margin-bottom: 0 !important;
+    line-height: 1.15 !important;
+}
+
+.job-section .single-job .job-title a {
+    transition: color 0.25s ease !important;
+}
+
+.job-section .single-job:hover .job-title a {
+    color: #6366f1 !important;
+}
+
+.job-section .single-job .employer-name a {
+    color: #9ca3af !important;
+    font-weight: 500 !important;
+    font-size: 11px !important;
+    transition: color 0.25s ease !important;
+}
+
+.job-section .single-job:hover .employer-name a {
+    color: #6b7280 !important;
+}
+
+.job-section .single-job .job-salary {
+    display: inline-block !important;
+    font-weight: 700 !important;
+    color: #059669 !important;
+    background: #ecfdf5 !important;
+    padding: 1px 6px !important;
+    border-radius: 20px !important;
+    margin: 2px 0 4px 0 !important;
+    font-size: 10px !important;
+    transition: all 0.3s ease !important;
+}
+
+.job-section .single-job:hover .job-salary {
+    background: #d1fae5 !important;
+    transform: translateX(2px) !important;
+}
+
+.job-section .single-job .job-meta {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    border-top: 1px solid #f3f4f6 !important;
+    padding-top: 5px !important;
+    margin-top: 2px !important;
+    clear: both;
+}
+
+.job-section .single-job .job-meta > div {
+    display: flex !important;
+    align-items: center !important;
+    color: #9ca3af !important;
+    font-size: 10px !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+    transition: color 0.25s ease !important;
+}
+
+.job-section .single-job:hover .job-meta > div {
+    color: #6b7280 !important;
+}
+
+.job-section .single-job .job-meta i {
+    margin-right: 2px !important;
+    color: #d1d5db !important;
+    font-size: 10px !important;
+    transition: color 0.25s ease !important;
+}
+
+.job-section .single-job:hover .job-meta i {
+    color: #6366f1 !important;
+}
+
+.job-section .single-job .featured-label {
+    background: #fef3c7 !important;
+    color: #d97706 !important;
+    padding: 1px 6px !important;
+    border-radius: 4px !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease !important;
+}
+
+.job-section .single-job:hover .featured-label {
+    background: #fde68a !important;
+    transform: scale(1.05) !important;
+}
+
+/* Staggered entrance animation for job cards */
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.job-section .single-job {
+    animation: fadeSlideUp 0.5s ease forwards;
+}
+
+.job-section .col-lg-6:nth-child(1) .single-job { animation-delay: 0.05s; }
+.job-section .col-lg-6:nth-child(2) .single-job { animation-delay: 0.1s; }
+.job-section .col-lg-6:nth-child(3) .single-job { animation-delay: 0.15s; }
+.job-section .col-lg-6:nth-child(4) .single-job { animation-delay: 0.2s; }
+.job-section .col-lg-6:nth-child(5) .single-job { animation-delay: 0.25s; }
+.job-section .col-lg-6:nth-child(6) .single-job { animation-delay: 0.3s; }
+
+/* --- Job Section: Compact 3-column layout (45% smaller cards) --- */
+.job-section .tab-content .row .col-lg-6 {
+    flex: 0 0 33.333% !important;
+    max-width: 33.333% !important;
+}
+
+@media (max-width: 991px) {
+    .job-section .tab-content .row .col-lg-6 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .job-section .tab-content .row .col-lg-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+/* Why DIJIT subcard image hover zoom (same as Dijit Talent Cloud card) */
+.why-dijit-main-card:hover .modern-card-img {
+    transform: scale(1.05);
+}
+
+/* Increase horizontal size of hero search bar to show all content */
+@media (min-width: 992px) {
+    .hero-content-2 .job-search-wrap {
+        width: 135% !important;
+        max-width: 950px !important;
+    }
+}
